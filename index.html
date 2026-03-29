@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MBK Révisions — يلا نراجع الفرنسي!</title>
+<meta name="description" content="موقع مراجعات اللغة الفرنسية للصف الحادي عشر والثاني عشر — كل شي تحتاجه للمراجعة في مكان واحد">
+<meta property="og:title" content="MBK Révisions — يلا نراجع الفرنسي!">
+<meta property="og:description" content="كل شي تحتاجه للمراجعة في مكان واحد">
+<meta property="og:image" content="hero.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Variables ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f0edff;--card-bg:#ffffff;--dark:#1a1a2e;--mid:#4A5568;--light:#8892a4;
+  --border:#e5e0f8;--shadow:0 4px 20px rgba(102,126,234,0.1);
+  --g1:#4f46e5;--g2:#a855f7;--g3:#f97316;
+  --d5:#667eea;--d5b:#764ba2;--d6:#a855f7;--d6b:#7c3aed;
+  --d7:#f97316;--d7b:#ea580c;--d8:#be123c;--d8b:#9f1239;
+  --d9:#0f766e;--d9b:#0d9488;
+  --d4t:#16a34a;--d4tb:#15803d;--d5t:#9333ea;--d5tb:#7e22ce;
+  --d6t:#dc2626;--d6tb:#b91c1c;
+  --glass:rgba(255,255,255,0.15);--glass-border:rgba(255,255,255,0.25);
+}
+.dark{
+  --bg:#0f0d1f;--card-bg:#1a1740;--dark:#e8e4ff;--mid:#a89fd8;--light:#7c75b0;
+  --border:#2d2a5e;--shadow:0 4px 20px rgba(0,0,0,0.45);
+  --glass:rgba(255,255,255,0.06);--glass-border:rgba(255,255,255,0.1);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--dark);
+  overflow-x:hidden;transition:background 0.4s,color 0.4s;line-height:1.7;
+}
+
+/* ── Navbar ── */
+.navbar{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0.8rem 2rem;display:flex;align-items:center;justify-content:space-between;
+  background:rgba(240,237,255,0.7);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);transition:all 0.3s;
+}
+.dark .navbar{background:rgba(15,13,31,0.8)}
+.navbar.scrolled{padding:0.5rem 2rem;box-shadow:var(--shadow)}
+.nav-logo{
+  font-family:'Baloo 2',cursive;font-size:1.4rem;font-weight:800;
+  background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;text-decoration:none;
+}
+.nav-links{display:flex;gap:1.5rem;align-items:center;list-style:none}
+.nav-links a{
+  color:var(--mid);text-decoration:none;font-weight:500;font-size:0.9rem;
+  transition:color 0.2s;
+}
+.nav-links a:hover{color:var(--g2)}
+.dark-btn{
+  background:var(--glass);border:1.5px solid var(--glass-border);
+  border-radius:50%;width:38px;height:38px;font-size:1.1rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all 0.3s;
+}
+.dark-btn:hover{transform:scale(1.1)}
+.mobile-menu-btn{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--dark)}
+
+/* ── Hero ── */
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:7rem 2rem 4rem;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#1a1145 0%,#2d1b69 30%,#4f46e5 60%,#a855f7 80%,#f97316 100%);
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 20% 50%,rgba(167,139,250,0.3),transparent 50%),
+             radial-gradient(circle at 80% 30%,rgba(249,115,22,0.2),transparent 50%),
+             radial-gradient(circle at 50% 80%,rgba(79,70,229,0.3),transparent 50%);
+}
+.hero-inner{
+  max-width:1200px;width:100%;display:grid;grid-template-columns:1fr 1fr;
+  gap:3rem;align-items:center;position:relative;z-index:2;
+}
+.hero-text{color:#fff}
+.hero-text h1{
+  font-family:'Tajawal',sans-serif;font-size:3.5rem;font-weight:800;
+  line-height:1.2;margin-bottom:1rem;
+  text-shadow:0 4px 30px rgba(0,0,0,0.3);
+}
+.hero-text h1 span{
+  background:linear-gradient(135deg,#fbbf24,#f97316);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-text p{
+  font-size:1.3rem;color:rgba(255,255,255,0.85);margin-bottom:2rem;
+  font-weight:500;
+}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:0.6rem;
+  padding:1rem 2.5rem;border-radius:99px;border:none;cursor:pointer;
+  font-family:'Tajawal',sans-serif;font-size:1.2rem;font-weight:700;
+  color:#fff;text-decoration:none;
+  background:linear-gradient(135deg,var(--g3),#f59e0b);
+  box-shadow:0 8px 30px rgba(249,115,22,0.4);
+  transition:all 0.3s;position:relative;overflow:hidden;
+}
+.hero-cta::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,#f59e0b,var(--g3));
+  opacity:0;transition:opacity 0.3s;
+}
+.hero-cta:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(249,115,22,0.5)}
+.hero-cta:hover::before{opacity:1}
+.hero-cta span{position:relative;z-index:1}
+.hero-img{position:relative}
+.hero-img img{
+  width:100%;border-radius:24px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+  border:3px solid rgba(255,255,255,0.15);
+}
+.hero-img::before{
+  content:'';position:absolute;inset:-8px;border-radius:28px;
+  background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));
+  z-index:-1;opacity:0.5;filter:blur(20px);
+}
+
+/* Floating particles */
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.particle{
+  position:absolute;border-radius:50%;background:rgba(255,255,255,0.15);
+  animation:floatUp linear infinite;
+}
+@keyframes floatUp{
+  0%{transform:translateY(100vh) scale(0);opacity:0}
+  10%{opacity:1}
+  90%{opacity:1}
+  100%{transform:translateY(-10vh) scale(1);opacity:0}
+}
+
+/* ── Section common ── */
+section{padding:5rem 2rem}
+.section-title{
+  font-family:'Tajawal',sans-serif;font-size:2.2rem;font-weight:800;
+  text-align:center;margin-bottom:0.5rem;
+}
+.section-sub{
+  text-align:center;color:var(--mid);font-size:1rem;margin-bottom:3rem;
+}
+.container{max-width:1100px;margin:0 auto}
+
+/* ── Features ── */
+.features{background:var(--bg)}
+.features-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;
+}
+.feature-card{
+  background:var(--card-bg);border:1.5px solid var(--border);border-radius:18px;
+  padding:1.8rem 1.2rem;text-align:center;transition:all 0.3s;
+  box-shadow:var(--shadow);
+}
+.feature-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(102,126,234,0.15)}
+.feature-icon{font-size:2.4rem;margin-bottom:0.5rem;display:block}
+.feature-card h3{font-family:'Tajawal',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:0.3rem}
+.feature-card p{color:var(--mid);font-size:0.85rem;line-height:1.5}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ── Stats ── */
+.stats{
+  background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));
+  color:#fff;
+}
+.stats-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;
+}
+.stat-item h2{font-family:'Baloo 2',cursive;font-size:3rem;font-weight:800;line-height:1}
+.stat-item p{font-size:0.95rem;opacity:0.9;margin-top:0.3rem;font-weight:500}
+
+/* ── Dossiers ── */
+.dossiers{background:var(--bg)}
+.grade-label{
+  font-family:'Tajawal',sans-serif;font-weight:700;font-size:1.1rem;
+  margin-bottom:1rem;padding:0.5rem 1.2rem;border-radius:99px;
+  display:inline-block;color:#fff;
+}
+.grade-section{margin-bottom:2.5rem}
+.dossier-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+.dossier-card{
+  border-radius:16px;padding:1.5rem 1rem;text-align:center;color:#fff;
+  font-weight:700;font-size:1rem;cursor:default;
+  transition:all 0.3s;box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+a.dossier-card{text-decoration:none;color:#fff;display:block}
+.dossier-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.2)}
+.dossier-card .emoji{font-size:2rem;display:block;margin-bottom:0.5rem}
+.dossier-card .label{font-size:0.82rem;opacity:0.9;font-weight:500;margin-top:0.3rem}
+
+/* ── Teacher Message ── */
+.teacher-msg{background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.msg-box{
+  max-width:700px;margin:0 auto;text-align:center;
+  background:var(--bg);border:2px solid var(--border);border-radius:24px;
+  padding:3rem 2rem;position:relative;
+}
+.msg-box::before{
+  content:'\201C';position:absolute;top:-10px;right:30px;
+  font-size:5rem;color:var(--g2);opacity:0.2;font-family:serif;line-height:1;
+}
+.msg-box .flag{font-size:3rem;margin-bottom:1rem;display:block}
+.msg-box blockquote{
+  font-size:1.05rem;line-height:1.9;color:var(--dark);margin-bottom:1.2rem;
+}
+.msg-box .author{font-weight:700;color:var(--g2);font-size:1.1rem}
+
+/* ── Final CTA ── */
+.final-cta{
+  text-align:center;padding:5rem 2rem;
+  background:linear-gradient(135deg,#1a1145,#2d1b69,#4f46e5);color:#fff;
+  position:relative;overflow:hidden;
+}
+.final-cta::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 50%,rgba(168,85,247,0.3),transparent 60%);
+}
+.final-cta h2{
+  font-family:'Tajawal',sans-serif;font-size:2.5rem;font-weight:800;
+  margin-bottom:0.8rem;position:relative;z-index:1;
+}
+.final-cta p{
+  font-size:1.1rem;opacity:0.85;margin-bottom:2rem;position:relative;z-index:1;
+}
+.final-cta .hero-cta{font-size:1.3rem;padding:1.1rem 3rem;position:relative;z-index:1}
+
+/* ── Footer ── */
+footer{
+  background:var(--card-bg);border-top:1px solid var(--border);
+  padding:2rem;text-align:center;color:var(--mid);font-size:0.85rem;
+}
+footer a{color:var(--g2);text-decoration:none}
+
+/* ── Responsive ── */
+@media(max-width:768px){
+  .hero{padding:4.5rem 1.2rem 2.5rem;min-height:auto}
+  .hero-inner{grid-template-columns:1fr;text-align:center;gap:1.5rem}
+  .hero-text h1{font-size:2.2rem}
+  .hero-text p{font-size:1.05rem;margin-bottom:1.2rem}
+  .hero-img{order:-1}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;background:var(--card-bg);padding:1rem;gap:0.8rem;
+    border-bottom:1px solid var(--border);box-shadow:var(--shadow);
+  }
+  .nav-links.open{display:flex}
+  .mobile-menu-btn{display:block}
+  .features-grid{grid-template-columns:repeat(2,1fr);gap:0.8rem}
+  .feature-card{padding:1rem 0.6rem;border-radius:14px}
+  .feature-icon{font-size:1.8rem;margin-bottom:0.3rem}
+  .feature-card h3{font-size:0.85rem;margin-bottom:0}
+  .feature-card p{display:none}
+  .dossier-grid{grid-template-columns:repeat(2,1fr)}
+  section{padding:2.5rem 1.2rem}
+}
+@media(max-width:480px){
+  .hero-text h1{font-size:2rem}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-item h2{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ── Navbar ── -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo">MBK Révisions</a>
+  <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="#hero">الرئيسية</a></li>
+    <li><a href="#features">المميزات</a></li>
+    <li><a href="#dossiers">الدوسييهات</a></li>
+    <li><a href="#teacher">رسالة المعلمة</a></li>
+    <li><button class="dark-btn" onclick="toggleDark()">&#127769;</button></li>
+  </ul>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero" id="hero">
+  <div class="particles" id="particles"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>يلا نراجع <span>الفرنسي!</span></h1>
+      <p>كل شي تحتاجه للمراجعة في مكان واحد</p>
+      <a href="MBK_Revisions.html" class="hero-cta"><span>ادخل الموقع &#128640;</span></a>
+    </div>
+    <div class="hero-img">
+      <img src="hero.png" alt="طلاب يراجعون الفرنسية" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ── -->
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title reveal">شنو بتلقى في الموقع؟</h2>
+    <p class="section-sub reveal">كل الأدوات اللي تحتاجها عشان تجهز للامتحان</p>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <span class="feature-icon">&#127917;</span>
+        <h3>حوارات تفاعلية</h3>
+        <p>اقرأ الحوار واسمعه وراجع المفردات مع الترجمة العربية</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">&#128218;</span>
+        <h3>بطاقات تعلّم</h3>
+        <p>فلاش كاردز ذكية تساعدك تحفظ المفردات بسرعة</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">&#9889;</span>
+        <h3>تحدّي شامل</h3>
+        <p>اختبر نفسك بـ ٢٠ سؤال عشوائي من كل الدوسييهات واختر مستواك</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">&#9997;&#65039;</span>
+        <h3>تمارين قواعد</h3>
+        <p>تدرب على النفي والملكية والتأنيث والتذكير</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">&#127183;</span>
+        <h3>ألعاب ذاكرة</h3>
+        <p>العب Memory Game وتعلم المفردات بطريقة ممتعة</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">&#128214;</span>
+        <h3>نصوص فهم</h3>
+        <p>نصوص فهم مكتوب مع أسئلة وإجابات تفصيلية</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats ── -->
+<section class="stats" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <h2><span class="counter" data-target="8">0</span>+</h2>
+        <p>دوسييه كامل</p>
+      </div>
+      <div class="stat-item reveal">
+        <h2><span class="counter" data-target="50">0</span>+</h2>
+        <p>نشاط تفاعلي</p>
+      </div>
+      <div class="stat-item reveal">
+        <h2><span class="counter" data-target="2">0</span></h2>
+        <p>مستوى دراسي</p>
+      </div>
+      <div class="stat-item reveal">
+        <h2><span class="counter" data-target="100">0</span>%</h2>
+        <p>مجاني بالكامل</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Dossiers ── -->
+<section class="dossiers" id="dossiers">
+  <div class="container">
+    <h2 class="section-title reveal">الدوسييهات المتاحة</h2>
+    <p class="section-sub reveal">اختر الدوسييه وابدأ المراجعة</p>
+
+    <div class="grade-section reveal">
+      <span class="grade-label" style="background:linear-gradient(135deg,var(--d5),var(--d5b))">&#128216; الصف الحادي عشر — 11ème — الفصل الدراسي الثاني</span>
+      <div class="dossier-grid">
+        <a href="MBK_Revisions.html?dossier=5" class="dossier-card" style="background:linear-gradient(135deg,var(--d5),var(--d5b))">
+          <span class="emoji">&#128216;</span>Dossier 5<div class="label">L'arrivée</div>
+        </a>
+        <a href="MBK_Revisions.html?dossier=6" class="dossier-card" style="background:linear-gradient(135deg,var(--d6),var(--d6b))">
+          <span class="emoji">&#128215;</span>Dossier 6<div class="label">Une visite</div>
+        </a>
+        <a href="MBK_Revisions.html?dossier=7" class="dossier-card" style="background:linear-gradient(135deg,var(--d7),var(--d7b))">
+          <span class="emoji">&#127869;&#65039;</span>Dossier 7<div class="label">Au restaurant</div>
+        </a>
+        <a href="MBK_Revisions.html?dossier=8" class="dossier-card" style="background:linear-gradient(135deg,var(--d8),var(--d8b))">
+          <span class="emoji">&#128717;&#65039;</span>Dossier 8<div class="label">Au magasin</div>
+        </a>
+        <a href="MBK_Revisions.html?dossier=9" class="dossier-card" style="background:linear-gradient(135deg,var(--d9),var(--d9b))">
+          <span class="emoji">&#128221;</span>Examen Blanc<div class="label">امتحان تجريبي</div>
+        </a>
+        <a href="MBK_Revisions.html?challenge=11" class="dossier-card" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+          <span class="emoji">&#9889;</span>Challenge Total<div class="label">تحدّي شامل — كل الدوسييهات</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="grade-section reveal">
+      <span class="grade-label" style="background:linear-gradient(135deg,var(--d4t),var(--d4tb))">&#128215; الصف الثاني عشر — 12ème — الفصل الدراسي الثاني</span>
+      <div class="dossier-grid">
+        <a href="MBK_Revisions.html?dossier=d4t" class="dossier-card" style="background:linear-gradient(135deg,var(--d4t),var(--d4tb))">
+          <span class="emoji">&#127881;</span>Dossier 4<div class="label">Une fête</div>
+        </a>
+        <a href="MBK_Revisions.html?dossier=d5t" class="dossier-card" style="background:linear-gradient(135deg,var(--d5t),var(--d5tb))">
+          <span class="emoji">&#129657;</span>Dossier 5<div class="label">Chez le docteur</div>
+        </a>
+        <a href="MBK_Revisions.html?dossier=d6t" class="dossier-card" style="background:linear-gradient(135deg,var(--d6t),var(--d6tb))">
+          <span class="emoji">&#127968;</span>Dossier 6<div class="label">Un nouveau logement</div>
+        </a>
+        <a href="MBK_Revisions.html?dossier=ebt" class="dossier-card" style="background:linear-gradient(135deg,var(--d9),var(--d9b))">
+          <span class="emoji">&#128221;</span>Examen Blanc<div class="label">امتحان تجريبي</div>
+        </a>
+        <a href="MBK_Revisions.html?challenge=12" class="dossier-card" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+          <span class="emoji">&#9889;</span>Challenge Total<div class="label">تحدّي شامل — كل الدوسييهات</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Teacher Message ── -->
+<section class="teacher-msg" id="teacher">
+  <div class="container">
+    <h2 class="section-title reveal">رسالة من المعلمة</h2>
+    <p class="section-sub reveal">كلمة حب وتشجيع من مدام ذكريات</p>
+    <div class="msg-box reveal">
+      <span class="flag">&#127472;&#127484;</span>
+      <blockquote>
+        أعزائي طلاب الصف الحادي عشر والثاني عشر،<br><br>
+        هالموقع سويته لكم من كل قلبي عشان يكون رفيجكم بالمراجعة والاستعداد للامتحانات. بتلقون هني كل شي تحتاجونه: حوارات، تمارين، بطاقات تعلم، وألعاب تفاعلية.<br><br>
+        تذكروا دايماً إن النجاح يبدأ بالمثابرة والعمل الجاد. أنتوا فخر هالوطن الغالي — الكويت &#127472;&#127484; — اللي نحملها بقلوبنا. حفظ الله الكويت وأهلها، وأدام عزها ورخاءها.<br><br>
+        بالتوفيق والنجاح إن شاء الله! &#128170;&#10024;
+      </blockquote>
+      <div class="author">Madame Thekrayat &#10084;&#65039;</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Final CTA ── -->
+<section class="final-cta">
+  <h2>جاهز تبدأ المراجعة؟</h2>
+  <p>لا تضيع وقت — يلا ادخل وابدأ!</p>
+  <a href="MBK_Revisions.html" class="hero-cta"><span>يلا نبدأ المراجعة! &#128170;</span></a>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <p>MBK Révisions &copy; 2025-2026 — صنع بكل حب &#10084;&#65039; بواسطة <strong>Madame Thekrayat</strong></p>
+  <p style="margin-top:0.4rem"><a href="MBK_Revisions.html">ادخل الموقع &larr;</a></p>
+</footer>
+
+<script>
+/* ── Dark Mode ── */
+function toggleDark(){
+  document.body.classList.toggle('dark');
+  localStorage.setItem('mbk-landing-dark', document.body.classList.contains('dark'));
+}
+if(localStorage.getItem('mbk-landing-dark')==='true') document.body.classList.add('dark');
+
+/* ── Navbar scroll effect ── */
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ── Close mobile menu on link click ── */
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'));
+});
+
+/* ── Scroll Reveal ── */
+const revealObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target)}});
+},{threshold:0.15});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+/* ── Animated Counters ── */
+const counterObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el = e.target;
+      const target = +el.dataset.target;
+      const duration = 1500;
+      const start = performance.now();
+      function tick(now){
+        const p = Math.min((now-start)/duration,1);
+        el.textContent = Math.floor(p*target);
+        if(p<1) requestAnimationFrame(tick);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(tick);
+      counterObs.unobserve(el);
+    }
+  });
+},{threshold:0.5});
+document.querySelectorAll('.counter').forEach(el=>counterObs.observe(el));
+
+/* ── Particles ── */
+(function createParticles(){
+  const c = document.getElementById('particles');
+  for(let i=0;i<20;i++){
+    const p = document.createElement('div');
+    p.className='particle';
+    const size = Math.random()*6+2;
+    p.style.cssText=`width:${size}px;height:${size}px;left:${Math.random()*100}%;animation-duration:${Math.random()*8+6}s;animation-delay:${Math.random()*6}s;`;
+    c.appendChild(p);
+  }
+})();
+</script>
+</body>
+</html>
