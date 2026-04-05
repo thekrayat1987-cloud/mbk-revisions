@@ -64,7 +64,7 @@ body{
   font-family:'Baloo 2',cursive;font-size:1.4rem;font-weight:800;
   background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;text-decoration:none;
+  background-clip:text;text-decoration:none;white-space:nowrap;
 }
 .nav-links{display:flex;gap:1.5rem;align-items:center;list-style:none}
 .nav-links a{
@@ -263,6 +263,11 @@ footer a{color:var(--g2);text-decoration:none}
   .hero-text p{font-size:1.05rem;margin-bottom:1.2rem}
   .hero-img{order:-1}
   .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .navbar{padding:0.5rem 1rem}
+  .navbar .nav-logos{gap:0.5rem}
+  .navbar .nav-logos img{height:28px!important}
+  .navbar .nav-logos .nav-separator{height:20px}
+  .nav-logo{font-size:1rem}
   .nav-links{display:none;position:absolute;top:100%;left:0;right:0;
     flex-direction:column;background:var(--card-bg);padding:1rem;gap:0.8rem;
     border-bottom:1px solid var(--border);box-shadow:var(--shadow);
@@ -288,9 +293,9 @@ footer a{color:var(--g2);text-decoration:none}
 
 <!-- ── Navbar ── -->
 <nav class="navbar" id="navbar">
-  <div style="display:flex;align-items:center;gap:1rem">
+  <div class="nav-logos" style="display:flex;align-items:center;gap:1rem">
     <img src="logo-mbk-crop.png" alt="MBK Inspection de Français" style="height:42px;object-fit:contain">
-    <div style="width:1px;height:30px;background:var(--border)"></div>
+    <div class="nav-separator" style="width:1px;height:30px;background:var(--border)"></div>
     <img src="ministry-crop.png" alt="وزارة التربية" style="height:42px;object-fit:contain">
   </div>
   <a href="#" class="nav-logo">MBK Révisions</a>
@@ -298,7 +303,7 @@ footer a{color:var(--g2);text-decoration:none}
   <ul class="nav-links">
     <li><a href="#hero">الرئيسية</a></li>
     <li><a href="#features">المميزات</a></li>
-    <li><a href="#dossiers">الدوسييهات</a></li>
+    <li><a href="#dossiers">الوحدات</a></li>
     <li><a href="#teacher">رسالة المعلمة</a></li>
     <li><button class="dark-btn" onclick="toggleDark()">&#127769;</button></li>
   </ul>
