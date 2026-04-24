@@ -1,0 +1,127 @@
+/* ═══════════════════════════════════════════════════════════
+   MBK RÉVISIONS — PREMIUM UPGRADE LAYER
+   Importé dans MBK_Revisions.html via <link>
+   Ajoute : aurora bg + glass morphism + Instrument Serif
+   ═══════════════════════════════════════════════════════════ */
+
+/* Aurora background animé */
+.aurora-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.aurora-bg::before, .aurora-bg::after, .aurora-bg .aurora-blob {
+  content: ""; position: absolute; border-radius: 50%;
+  filter: blur(80px); opacity: 0.45;
+  animation: auroraFloat 22s ease-in-out infinite;
+}
+.aurora-bg::before { width: 55vw; height: 55vw; top: -10vw; left: -10vw; background: radial-gradient(circle, #a78bfa, transparent 70%); }
+.aurora-bg::after { width: 60vw; height: 60vw; bottom: -20vw; right: -15vw; background: radial-gradient(circle, #fb923c, transparent 70%); animation-delay: -9s; }
+.aurora-bg .aurora-blob { width: 45vw; height: 45vw; top: 30%; left: 40%; background: radial-gradient(circle, #f472b6, transparent 70%); animation-delay: -15s; opacity: 0.35; }
+body.dark-mode .aurora-bg::before { background: radial-gradient(circle, #6d28d9, transparent 70%); opacity: 0.55; }
+body.dark-mode .aurora-bg::after  { background: radial-gradient(circle, #c2410c, transparent 70%); opacity: 0.45; }
+body.dark-mode .aurora-bg .aurora-blob { background: radial-gradient(circle, #9f1239, transparent 70%); opacity: 0.35; }
+@keyframes auroraFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(8vw, -5vw) scale(1.1); }
+  66% { transform: translate(-6vw, 8vw) scale(0.95); }
+}
+
+/* Body transparent pour laisser passer l'aurora */
+body { background: transparent !important; position: relative; }
+body::before { content: ""; position: fixed; inset: 0; z-index: -2; background: #f5f0ff; }
+body.dark-mode::before { background: #0a0520; }
+
+/* Top bar premium glass */
+.top-bar {
+  background: rgba(255,255,255,0.55) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.6) !important;
+}
+body.dark-mode .top-bar { background: rgba(30, 22, 60, 0.55) !important; border-bottom-color: rgba(255,255,255,0.08) !important; }
+
+/* Brand "Révisions" en Instrument Serif italic */
+.top-bar-logo, .top-bar-logo em {
+  font-family: 'Instrument Serif', serif !important;
+  font-style: italic; font-weight: 400 !important;
+  font-size: 1.35rem !important; letter-spacing: -0.01em;
+}
+
+/* Grade toggle pill glass */
+.grade-toggle {
+  background: rgba(255,255,255,0.5) !important;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 999px !important;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  padding: 3px;
+}
+body.dark-mode .grade-toggle { background: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.08); }
+.grade-toggle button { font-family: 'Geist', sans-serif !important; border-radius: 999px !important; padding: 6px 14px !important; }
+.grade-toggle button.active-g { border-radius: 999px !important; }
+
+/* Dark toggle glass */
+.dark-toggle {
+  background: rgba(255,255,255,0.5) !important;
+  border: 1px solid rgba(255,255,255,0.6) !important;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  width: 36px !important; height: 36px !important;
+}
+body.dark-mode .dark-toggle { background: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.08) !important; }
+
+/* Dossier tabs — transparent bg */
+.dossier-tabs { background: transparent !important; }
+
+/* Nav tabs interne — glass */
+nav.nav-tabs, .nav-tabs {
+  background: rgba(255,255,255,0.55) !important;
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+}
+body.dark-mode nav.nav-tabs, body.dark-mode .nav-tabs { background: rgba(30, 22, 60, 0.55) !important; }
+
+/* Section titles en Instrument Serif italic */
+.section-title {
+  font-family: 'Instrument Serif', serif !important;
+  font-style: italic; font-weight: 400 !important;
+  font-size: 2rem !important; letter-spacing: -0.02em; line-height: 1.1;
+}
+
+/* Home cards — glass premium */
+.home-card {
+  background: rgba(255,255,255,0.75) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.6) !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.9) inset, 0 8px 24px -8px rgba(99, 102, 241, 0.25) !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s !important;
+}
+body.dark-mode .home-card { background: rgba(30, 22, 60, 0.65) !important; border-color: rgba(255,255,255,0.08) !important; }
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.9) inset, 0 20px 40px -12px rgba(99, 102, 241, 0.4) !important;
+}
+
+/* Home card title — Instrument Serif */
+.home-card-title {
+  font-family: 'Instrument Serif', serif !important;
+  font-style: italic; font-weight: 400 !important;
+  font-size: 1.3rem !important; letter-spacing: -0.01em;
+}
+
+/* Dossier tabs — glass renforcé SEULEMENT sur tabs inactives */
+.dtab:not([class*="active-"]) {
+  background: rgba(255,255,255,0.65) !important;
+  -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.6) !important;
+}
+body.dark-mode .dtab:not([class*="active-"]) {
+  background: rgba(30, 22, 60, 0.55) !important;
+  border-color: rgba(255,255,255,0.08) !important;
+}
+/* Tabs actives — garder le gradient d'origine (D5/D6/D7/D8/D9/...) */
+.dtab[class*="active-"] {
+  border-color: transparent !important;
+  color: white !important;
+}
+
+/* Flashcards — glass */
+.fc-card, .fc-front, .fc-back, .card-front, .card-back {
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+}

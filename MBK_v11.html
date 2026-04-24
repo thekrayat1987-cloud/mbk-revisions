@@ -283,6 +283,7 @@ nav::-webkit-scrollbar-thumb { background: #a5b4fc; border-radius: 3px; }
       <button class="nav-btn active" onclick="showSec('d5','home')"><span class="nav-icon">🏠</span>Accueil</button>
       <button class="nav-btn" onclick="showSec('d5','group-compreh')"><span class="nav-icon">📖</span>Compréhension</button>
       <button class="nav-btn" onclick="showSec('d5','group-vocab')"><span class="nav-icon">📚</span>Vocabulaire</button>
+      <button class="nav-btn" onclick="showSec('d5','group-co')"><span class="nav-icon">🎧</span>Comp. Orale</button>
       <button class="nav-btn" onclick="showSec('d5','group-gram')"><span class="nav-icon">✏️</span>Grammaire</button>
       <button class="nav-btn" onclick="showSec('d5','group-comm')"><span class="nav-icon">💬</span>Comm & Production</button>
     </nav>
@@ -304,6 +305,12 @@ nav::-webkit-scrollbar-thumb { background: #a5b4fc; border-radius: 3px; }
         <div class="home-card-title">Vocabulaire</div>
         <div class="home-card-ar">المفردات</div>
         <span class="home-card-badge" style="background:#EBF8FF;color:#667eea">7 activités</span>
+      </div>
+      <div class="home-card" onclick="showSec('d5','group-co')" style="border-color:#667eea22">
+        <div class="home-card-icon">🎧</div>
+        <div class="home-card-title">Comp. Orale</div>
+        <div class="home-card-ar">الفهم السمعي</div>
+        <span class="home-card-badge" style="background:#EBF8FF;color:#667eea">4 activités</span>
       </div>
       <div class="home-card" onclick="showSec('d5','group-gram')">
         <div class="home-card-icon">✏️</div>
@@ -407,6 +414,29 @@ nav::-webkit-scrollbar-thumb { background: #a5b4fc; border-radius: 3px; }
       <div id="d5-production-content"></div>
     </div>
   </div>
+
+  <!-- D5 GROUP: COMPRÉHENSION ORALE -->
+  <div class="section" id="d5-group-co">
+    <div class="section-title">🎧 Compréhension Orale — Dossier 5</div>
+    <div class="section-sub">الفهم السمعي — استمع وأجب</div>
+    <div class="pill-nav" id="d5-co-pills"></div>
+    <div id="d5-sub-co1" class="sub-section active">
+      <div style="font-size:0.85rem;font-weight:700;color:#667eea;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 1 — À l'aéroport</div>
+      <div id="d5-co1-content"></div>
+    </div>
+    <div id="d5-sub-co2" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#667eea;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 2 — La météo</div>
+      <div id="d5-co2-content"></div>
+    </div>
+    <div id="d5-sub-co3" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#667eea;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 3 — La maison</div>
+      <div id="d5-co3-content"></div>
+    </div>
+    <div id="d5-sub-co4" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#667eea;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 4 — Le logement</div>
+      <div id="d5-co4-content"></div>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -416,6 +446,7 @@ nav::-webkit-scrollbar-thumb { background: #a5b4fc; border-radius: 3px; }
       <button class="nav-btn active" onclick="showSec('d6','home')"><span class="nav-icon">🏠</span>Accueil</button>
       <button class="nav-btn" onclick="showSec('d6','group-compreh')"><span class="nav-icon">📖</span>Compréhension</button>
       <button class="nav-btn" onclick="showSec('d6','group-vocab')"><span class="nav-icon">📚</span>Vocabulaire</button>
+      <button class="nav-btn" onclick="showSec('d6','group-co')"><span class="nav-icon">🎧</span>Comp. Orale</button>
       <button class="nav-btn" onclick="showSec('d6','group-gram')"><span class="nav-icon">✏️</span>Grammaire</button>
       <button class="nav-btn" onclick="showSec('d6','group-comm')"><span class="nav-icon">💬</span>Comm & Production</button>
     </nav>
@@ -437,6 +468,12 @@ nav::-webkit-scrollbar-thumb { background: #a5b4fc; border-radius: 3px; }
         <div class="home-card-title">Vocabulaire</div>
         <div class="home-card-ar">المفردات</div>
         <span class="home-card-badge" style="background:#F5F3FF;color:#7c3aed">7 activités</span>
+      </div>
+      <div class="home-card" onclick="showSec('d6','group-co')" style="border-color:#a855f722">
+        <div class="home-card-icon">🎧</div>
+        <div class="home-card-title">Comp. Orale</div>
+        <div class="home-card-ar">الفهم السمعي</div>
+        <span class="home-card-badge" style="background:#F5F3FF;color:#7c3aed">4 activités</span>
       </div>
       <div class="home-card" onclick="showSec('d6','group-gram')">
         <div class="home-card-icon">✏️</div>
@@ -530,6 +567,29 @@ nav::-webkit-scrollbar-thumb { background: #a5b4fc; border-radius: 3px; }
     <div id="d6-sub-production" class="sub-section">
       <div style="font-size:0.85rem;font-weight:700;color:#a855f7;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">📝 Production écrite</div>
       <div id="d6-production-content"></div>
+    </div>
+  </div>
+
+  <!-- D6 GROUP: COMPRÉHENSION ORALE -->
+  <div class="section" id="d6-group-co">
+    <div class="section-title">🎧 Compréhension Orale — Dossier 6</div>
+    <div class="section-sub">الفهم السمعي — استمع وأجب</div>
+    <div class="pill-nav" id="d6-co-pills"></div>
+    <div id="d6-sub-co1" class="sub-section active">
+      <div style="font-size:0.85rem;font-weight:700;color:#a855f7;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 1 — À Paris</div>
+      <div id="d6-co1-content"></div>
+    </div>
+    <div id="d6-sub-co2" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#a855f7;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 2 — Au musée</div>
+      <div id="d6-co2-content"></div>
+    </div>
+    <div id="d6-sub-co3" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#a855f7;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 3 — Le métro</div>
+      <div id="d6-co3-content"></div>
+    </div>
+    <div id="d6-sub-co4" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#a855f7;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 4 — Ma visite</div>
+      <div id="d6-co4-content"></div>
     </div>
   </div>
 </div>
@@ -1420,6 +1480,7 @@ function compAns(btn,cid,chosen,ok,idx){
       <button class="nav-btn active" onclick="showSec('d8','home')"><span class="nav-icon">🏠</span>Accueil</button>
       <button class="nav-btn" onclick="showSec('d8','group-compreh')"><span class="nav-icon">📖</span>Compréhension</button>
       <button class="nav-btn" onclick="showSec('d8','group-vocab')"><span class="nav-icon">📚</span>Vocabulaire</button>
+      <button class="nav-btn" onclick="showSec('d8','group-co')"><span class="nav-icon">🎧</span>Comp. Orale</button>
       <button class="nav-btn" onclick="showSec('d8','group-gram')"><span class="nav-icon">✏️</span>Grammaire</button>
       <button class="nav-btn" onclick="showSec('d8','group-comm')"><span class="nav-icon">💬</span>Comm & Production</button>
     </nav>
@@ -1441,6 +1502,12 @@ function compAns(btn,cid,chosen,ok,idx){
         <div class="home-card-title">Vocabulaire</div>
         <div class="home-card-ar">المفردات</div>
         <span class="home-card-badge" style="background:#FFF1F2;color:#be123c">8 activités</span>
+      </div>
+      <div class="home-card" onclick="showSec('d8','group-co')" style="border-color:#be123c22">
+        <div class="home-card-icon">🎧</div>
+        <div class="home-card-title">Comp. Orale</div>
+        <div class="home-card-ar">الفهم السمعي</div>
+        <span class="home-card-badge" style="background:#FFF1F2;color:#be123c">4 activités</span>
       </div>
       <div class="home-card" onclick="showSec('d8','group-gram')">
         <div class="home-card-icon">✏️</div>
@@ -1544,6 +1611,29 @@ function compAns(btn,cid,chosen,ok,idx){
       <div id="d8-production-content"></div>
     </div>
   </div>
+
+  <!-- D8 GROUP: COMPRÉHENSION ORALE -->
+  <div class="section" id="d8-group-co">
+    <div class="section-title">🎧 Compréhension Orale — Dossier 8</div>
+    <div class="section-sub">الفهم السمعي — استمع وأجب</div>
+    <div class="pill-nav" id="d8-co-pills"></div>
+    <div id="d8-sub-co1" class="sub-section active">
+      <div style="font-size:0.85rem;font-weight:700;color:#be123c;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 1 — Un vêtement</div>
+      <div id="d8-co1-content"></div>
+    </div>
+    <div id="d8-sub-co2" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#be123c;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 2 — L'essayage</div>
+      <div id="d8-co2-content"></div>
+    </div>
+    <div id="d8-sub-co3" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#be123c;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 3 — La caisse</div>
+      <div id="d8-co3-content"></div>
+    </div>
+    <div id="d8-sub-co4" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#be123c;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 4 — Mon look</div>
+      <div id="d8-co4-content"></div>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -1553,6 +1643,7 @@ function compAns(btn,cid,chosen,ok,idx){
       <button class="nav-btn active" onclick="showSec('d7','home')"><span class="nav-icon">🏠</span>Accueil</button>
       <button class="nav-btn" onclick="showSec('d7','group-compreh')"><span class="nav-icon">📖</span>Compréhension</button>
       <button class="nav-btn" onclick="showSec('d7','group-vocab')"><span class="nav-icon">📚</span>Vocabulaire</button>
+      <button class="nav-btn" onclick="showSec('d7','group-co')"><span class="nav-icon">🎧</span>Comp. Orale</button>
       <button class="nav-btn" onclick="showSec('d7','group-gram')"><span class="nav-icon">✏️</span>Grammaire</button>
       <button class="nav-btn" onclick="showSec('d7','group-comm')"><span class="nav-icon">💬</span>Comm & Production</button>
     </nav>
@@ -1574,6 +1665,12 @@ function compAns(btn,cid,chosen,ok,idx){
         <div class="home-card-title">Vocabulaire</div>
         <div class="home-card-ar">المفردات</div>
         <span class="home-card-badge" style="background:#FFF7ED;color:#c2410c">6 activités</span>
+      </div>
+      <div class="home-card" onclick="showSec('d7','group-co')" style="border-color:#f9731622">
+        <div class="home-card-icon">🎧</div>
+        <div class="home-card-title">Comp. Orale</div>
+        <div class="home-card-ar">الفهم السمعي</div>
+        <span class="home-card-badge" style="background:#FFF7ED;color:#c2410c">4 activités</span>
       </div>
       <div class="home-card" onclick="showSec('d7','group-gram')">
         <div class="home-card-icon">✏️</div>
@@ -1667,6 +1764,30 @@ function compAns(btn,cid,chosen,ok,idx){
     <div id="d7-sub-production" class="sub-section">
       <div style="font-size:0.85rem;font-weight:700;color:#f97316;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">📝 Production écrite</div>
       <div id="d7-production-content"></div>
+    </div>
+  </div>
+
+  <!-- D7 GROUP: COMPRÉHENSION ORALE -->
+  <div class="section" id="d7-group-co">
+    <div class="section-title">🎧 Compréhension Orale — Dossier 7</div>
+    <div class="section-sub">الفهم السمعي — استمع وأجب</div>
+    <div class="pill-nav" id="d7-co-pills"></div>
+    <div id="d7-sub-co1" class="sub-section active">
+      <div style="font-size:0.85rem;font-weight:700;color:#f97316;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 1 — Réservation</div>
+      <div id="d7-co1-content"></div>
+    </div>
+    <div id="d7-sub-co2" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#f97316;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 2 — Commander</div>
+      <div id="d7-co2-content"></div>
+    </div>
+    <div id="d7-sub-co3" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#f97316;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 3 — L'addition</div>
+      <div id="d7-co3-content"></div>
+    </div>
+    <div id="d7-sub-co4" class="sub-section">
+      <div style="font-size:0.85rem;font-weight:700;color:#f97316;margin-bottom:0.6rem;padding:4px 0;border-bottom:2px dashed #E2E8F0">🎧 Activité 4 — Mon restau</div>
+      <div id="d7-co4-content"></div>
+    </div>
   </div>
 </div>
 
@@ -1920,10 +2041,10 @@ function showSec(d, id) {
   if(secEl) secEl.classList.add('active');
 
   const navMap = {
-    d5:{home:0,'group-compreh':1,'group-vocab':2,'group-gram':3,'group-comm':4},
-    d6:{home:0,'group-compreh':1,'group-vocab':2,'group-gram':3,'group-comm':4},
-    d7:{home:0,'group-compreh':1,'group-vocab':2,'group-gram':3,'group-comm':4},
-    d8:{home:0,'group-compreh':1,'group-vocab':2,'group-gram':3,'group-comm':4}
+    d5:{home:0,'group-compreh':1,'group-vocab':2,'group-co':3,'group-gram':4,'group-comm':5},
+    d6:{home:0,'group-compreh':1,'group-vocab':2,'group-co':3,'group-gram':4,'group-comm':5},
+    d7:{home:0,'group-compreh':1,'group-vocab':2,'group-co':3,'group-gram':4,'group-comm':5},
+    d8:{home:0,'group-compreh':1,'group-vocab':2,'group-co':3,'group-gram':4,'group-comm':5}
   };
   const idx = navMap[d]?.[id];
   if(idx !== undefined) document.querySelectorAll('#nav-'+d+' .nav-btn')[idx]?.classList.add('active');
@@ -1944,6 +2065,7 @@ function showSec(d, id) {
   if(id==='group-vocab') { initGroupPills(d,'vocab'); return; }
   if(id==='group-gram')  { initGroupPills(d,'gram');  return; }
   if(id==='group-comm')  { initGroupPills(d,'comm');  return; }
+  if(id==='group-co')    { initGroupPills(d,'co');    return; }
 
   if(id==='comm') { initComm(d); return; }
   if(id==='insolite') { initInsolite(d); return; }
@@ -2705,8 +2827,8 @@ function initD5Production() {
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:1rem">
       ${[
-        {id:'d5img1',src:'11d51.png',model:'Il pleut. La famille reste à la maison et lit un livre.'},
-        {id:'d5img2',src:'11d52.png',model:'La famille est dans l\'appartement. Il pleut dehors.'},
+        {id:'d5img1',src:'11d51.png',model:'1. La famille est à la maison.<br>2. Il pleut dehors.<br>3. Ils lisent un livre.'},
+        {id:'d5img2',src:'11d52.png',model:'1. La famille est dans le salon.<br>2. Le salon est moderne.<br>3. La fille joue par terre.'},
       ].map((img,i)=>`
       <div style="background:white;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.06);overflow:hidden">
         <div style="display:grid;grid-template-columns:1fr 1fr;min-height:200px">
@@ -2755,6 +2877,1307 @@ function resetD5Email() {
   if(r) r.innerHTML='';
   const m=document.getElementById('d5-model-email');
   if(m) m.style.display='none';
+}
+
+// ============================================================
+// DOSSIER 5 — COMPRÉHENSION ORALE
+// ============================================================
+
+const d5COData = [
+  // ── ACTIVITÉ 1 : À l'aéroport ──
+  {
+    title: "Activité 1 — À l'aéroport",
+    titleAr: "النشاط ١ — في المطار",
+    icon: "✈️",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Nadia :</strong> Bonjour Monsieur Dupont ! Je suis Nadia. Et voici mon frère Ali.<br>
+<strong>M. Dupont :</strong> Bonjour Nadia, bonjour Ali ! Bienvenue en France !<br>
+<strong>Ali :</strong> Merci beaucoup Monsieur. Le voyage était très agréable.<br>
+<strong>M. Dupont :</strong> Vous êtes fatigués ?<br>
+<strong>Nadia :</strong> Non, non, nous ne sommes pas fatigués.<br>
+<strong>M. Dupont :</strong> Très bien ! Venez, ma voiture est dans le parking.<br>
+<strong>Ali :</strong> D'accord, allons-y !`,
+    scriptAudio: "Bonjour Monsieur Dupont ! Je suis Nadia. Et voici mon frère Ali. — Bonjour Nadia, bonjour Ali ! Bienvenue en France ! — Merci beaucoup Monsieur. Le voyage était très agréable. — Vous êtes fatigués ? — Non, non, nous ne sommes pas fatigués. — Très bien ! Venez, ma voiture est dans le parking. — D'accord, allons-y !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"3 personnes"},
+      {q: "2. Qui sont Nadia et Ali ?", type:"ab", opts:["Des amis","Un frère et une sœur"], answer:"Un frère et une sœur"},
+      {q: "3. Ils sont dans quel lieu ?", type:"ab", opts:["À la gare","À l'aéroport"], answer:"À l'aéroport"},
+      {q: "4. Nadia et Ali arrivent dans quel pays ?", type:"ab", opts:["En France","Au Koweït"], answer:"En France"},
+      {q: "5. Comment était le voyage selon Ali ?", type:"ab", opts:["Très long","Très agréable"], answer:"Très agréable"},
+      {q: "6. Nadia et Ali sont fatigués ?", type:"yesno", answer:"non"},
+      {q: "7. Où est la voiture de M. Dupont ?", type:"ab", opts:["Dans la rue","Dans le parking"], answer:"Dans le parking"},
+      {q: "8. Qui dit « Bienvenue en France » ?", type:"ab", opts:["Nadia","M. Dupont"], answer:"M. Dupont"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"bonjour", ar:"مرحبا"},
+        {fr:"bienvenue", ar:"أهلاً وسهلاً"},
+        {fr:"le voyage", ar:"الرحلة"},
+        {fr:"agréable", ar:"ممتع"},
+        {fr:"fatigué(e)", ar:"متعب / متعبة"},
+        {fr:"la voiture", ar:"السيارة"},
+        {fr:"le parking", ar:"الموقف"},
+        {fr:"mon frère", ar:"أخي"},
+      ],
+      hints: [
+        {ar:"استمع وعُدّ الأصوات: كم شخص يتكلم؟", fr:"Combien de personnes parlent ?"},
+        {ar:"انتبه للأسماء: Nadia, Ali, Dupont", fr:"Fais attention aux prénoms"},
+        {ar:"ركّز على المكان: أين هم؟", fr:"Où sont-ils ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"لا تحاول فهم كل كلمة — ركّز على الكلمات المهمة", fr:"Concentre-toi sur les mots importants"},
+        {ar:"اكتب الأسماء التي تسمعها أثناء الاستماع", fr:"Note les noms que tu entends"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 2 : La météo ──
+  {
+    title: "Activité 2 — La météo",
+    titleAr: "النشاط ٢ — الطقس",
+    icon: "🌤️",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Sophie :</strong> Bonjour Khalid ! Tu vas bien ?<br>
+<strong>Khalid :</strong> Oui, ça va Sophie. Dis-moi, il fait quel temps aujourd'hui à Lyon ?<br>
+<strong>Sophie :</strong> Aujourd'hui, il fait froid. La température est de 5 degrés et il y a du vent.<br>
+<strong>Khalid :</strong> Oh là là ! Au Koweït, il fait très chaud. La température dépasse les 40 degrés et il y a beaucoup de soleil.<br>
+<strong>Sophie :</strong> Tu n'as pas besoin de parapluie alors !<br>
+<strong>Khalid :</strong> Non ! Mais j'ai besoin d'un parasol !`,
+    scriptAudio: "Bonjour Khalid ! Tu vas bien ? — Oui, ça va Sophie. Dis-moi, il fait quel temps aujourd'hui à Lyon ? — Aujourd'hui, il fait froid. La température est de 5 degrés et il y a du vent. — Oh là là ! Au Koweït, il fait très chaud. La température dépasse les 40 degrés et il y a beaucoup de soleil. — Tu n'as pas besoin de parapluie alors ! — Non ! Mais j'ai besoin d'un parasol !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. C'est un dialogue entre qui et qui ?", type:"ab", opts:["Sophie et Khalid","Sophie et Ali"], answer:"Sophie et Khalid"},
+      {q: "3. On parle de quel sujet ?", type:"ab", opts:["La maison","La météo"], answer:"La météo"},
+      {q: "4. Khalid demande le temps à Lyon ou à Paris ?", type:"ab", opts:["À Paris","À Lyon"], answer:"À Lyon"},
+      {q: "5. Quelle est la température à Lyon ?", type:"ab", opts:["5 degrés","15 degrés"], answer:"5 degrés"},
+      {q: "6. À Lyon, il y a du vent ?", type:"yesno", answer:"oui"},
+      {q: "7. La température au Koweït dépasse combien de degrés ?", type:"ab", opts:["30 degrés","40 degrés"], answer:"40 degrés"},
+      {q: "8. Khalid a besoin d'un parapluie ?", type:"yesno", answer:"non"},
+      {q: "9. De quoi Khalid a-t-il besoin ?", type:"ab", opts:["D'un imperméable","D'un parasol"], answer:"D'un parasol"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"il fait beau", ar:"الطقس جميل"},
+        {fr:"il fait chaud", ar:"الجو حار"},
+        {fr:"il fait froid", ar:"الجو بارد"},
+        {fr:"il y a du vent", ar:"هناك رياح"},
+        {fr:"le soleil", ar:"الشمس"},
+        {fr:"un parapluie", ar:"مظلة المطر"},
+        {fr:"un parasol", ar:"مظلة الشمس"},
+        {fr:"la température", ar:"درجة الحرارة"},
+      ],
+      hints: [
+        {ar:"استمع إلى أسماء المدن: Lyon و Koweït", fr:"Écoute les noms de villes"},
+        {ar:"انتبه للأرقام: 5 و 40", fr:"Fais attention aux chiffres"},
+        {ar:"ركّز على الموضوع العام: عن ماذا يتكلمون؟", fr:"De quoi parlent-ils ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 3 : La maison ──
+  {
+    title: "Activité 3 — La maison",
+    titleAr: "النشاط ٣ — المنزل",
+    icon: "🏠",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Léa :</strong> Salut Mariam ! Entre, c'est ma maison.<br>
+<strong>Mariam :</strong> Merci Léa. Oh, c'est très joli !<br>
+<strong>Léa :</strong> Ici en bas, c'est le salon et là-bas c'est la cuisine.<br>
+<strong>Mariam :</strong> Et la salle à manger ?<br>
+<strong>Léa :</strong> Elle est à côté du salon. Viens, on monte au premier étage.<br>
+<strong>Mariam :</strong> D'accord !<br>
+<strong>Léa :</strong> À gauche, c'est la chambre de mes parents. À droite, c'est ma chambre. Et en face, c'est la salle de bains.<br>
+<strong>Mariam :</strong> Ta chambre est grande ! J'aime beaucoup ta maison.`,
+    scriptAudio: "Salut Mariam ! Entre, c'est ma maison. — Merci Léa. Oh, c'est très joli ! — Ici en bas, c'est le salon et là-bas c'est la cuisine. — Et la salle à manger ? — Elle est à côté du salon. Viens, on monte au premier étage. — D'accord ! — À gauche, c'est la chambre de mes parents. À droite, c'est ma chambre. Et en face, c'est la salle de bains. — Ta chambre est grande ! J'aime beaucoup ta maison.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Qui montre la maison ?", type:"ab", opts:["Mariam","Léa"], answer:"Léa"},
+      {q: "3. On parle de quel sujet ?", type:"ab", opts:["La maison","L'école"], answer:"La maison"},
+      {q: "4. Le salon est en haut ou en bas ?", type:"ab", opts:["En haut","En bas"], answer:"En bas"},
+      {q: "5. La salle à manger est où ?", type:"ab", opts:["À côté du salon","À côté de la cuisine"], answer:"À côté du salon"},
+      {q: "6. La chambre de Léa est à quel étage ?", type:"ab", opts:["Rez-de-chaussée","Premier étage"], answer:"Premier étage"},
+      {q: "7. La chambre de Léa est à gauche ou à droite ?", type:"ab", opts:["À gauche","À droite"], answer:"À droite"},
+      {q: "8. La salle de bains est en face de la chambre de Léa ?", type:"yesno", answer:"oui"},
+      {q: "9. Mariam aime la maison de Léa ?", type:"yesno", answer:"oui"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"le salon", ar:"غرفة المعيشة / الصالة"},
+        {fr:"la cuisine", ar:"المطبخ"},
+        {fr:"la salle à manger", ar:"غرفة الطعام"},
+        {fr:"la chambre", ar:"غرفة النوم"},
+        {fr:"la salle de bains", ar:"الحمام"},
+        {fr:"en haut", ar:"في الأعلى"},
+        {fr:"en bas", ar:"في الأسفل"},
+        {fr:"à gauche", ar:"على اليسار"},
+        {fr:"à droite", ar:"على اليمين"},
+        {fr:"à côté de", ar:"بجانب"},
+      ],
+      hints: [
+        {ar:"استمع وحدد: مَن يتكلم؟ مَن يسأل؟", fr:"Qui parle ? Qui demande ?"},
+        {ar:"انتبه للاتجاهات", fr:"gauche, droite, en haut, en bas"},
+        {ar:"ركّز على أسماء الغرف التي تسمعها", fr:"Écoute les noms des pièces"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل", fr:"Écoute au moins deux fois"},
+        {ar:"ارسم خريطة بسيطة للمنزل أثناء الاستماع", fr:"Dessine un plan simple de la maison"},
+        {ar:"اكتب أسماء الغرف التي تسمعها", fr:"Note les noms des pièces"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 4 : Le logement ──
+  {
+    title: "Activité 4 — Le logement",
+    titleAr: "النشاط ٤ — السكن",
+    icon: "🏡",
+    script: `<strong>Monologue :</strong><br><br>
+Bonjour, je m'appelle Youssef. J'habite au Koweït avec ma famille. Nous habitons dans un grand appartement au deuxième étage d'un immeuble moderne.<br>
+Notre appartement a un salon, une cuisine, trois chambres et une salle de bains. Il y a aussi un petit balcon.<br>
+Ma sœur Lina a une chambre à gauche. Moi, ma chambre est à droite. La chambre de mes parents est grande et belle.<br>
+J'aime notre appartement parce qu'il est près de mon école. Le supermarché aussi n'est pas loin.`,
+    scriptAudio: "Bonjour, je m'appelle Youssef. J'habite au Koweït avec ma famille. Nous habitons dans un grand appartement au deuxième étage d'un immeuble moderne. Notre appartement a un salon, une cuisine, trois chambres et une salle de bains. Il y a aussi un petit balcon. Ma sœur Lina a une chambre à gauche. Moi, ma chambre est à droite. La chambre de mes parents est grande et belle. J'aime notre appartement parce qu'il est près de mon école. Le supermarché aussi n'est pas loin.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["1 personne","2 personnes"], answer:"1 personne"},
+      {q: "2. Qui parle ?", type:"ab", opts:["Lina","Youssef"], answer:"Youssef"},
+      {q: "3. On parle de quel sujet ?", type:"ab", opts:["Le logement","Le restaurant"], answer:"Le logement"},
+      {q: "4. Youssef habite dans une maison ou un appartement ?", type:"ab", opts:["Une maison","Un appartement"], answer:"Un appartement"},
+      {q: "5. L'appartement est à quel étage ?", type:"ab", opts:["Premier étage","Deuxième étage"], answer:"Deuxième étage"},
+      {q: "6. Il y a combien de chambres ?", type:"ab", opts:["Deux chambres","Trois chambres"], answer:"Trois chambres"},
+      {q: "7. Comment s'appelle la sœur de Youssef ?", type:"ab", opts:["Léa","Lina"], answer:"Lina"},
+      {q: "8. La chambre de Youssef est à gauche ou à droite ?", type:"ab", opts:["À gauche","À droite"], answer:"À droite"},
+      {q: "9. L'appartement est loin de l'école ?", type:"yesno", answer:"non"},
+      {q: "10. Qu'est-ce qui n'est pas loin aussi ?", type:"ab", opts:["La boulangerie","Le supermarché"], answer:"Le supermarché"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"un appartement", ar:"شقة"},
+        {fr:"un immeuble", ar:"عمارة / مبنى"},
+        {fr:"moderne", ar:"حديث"},
+        {fr:"un balcon", ar:"شرفة"},
+        {fr:"la salle de bains", ar:"الحمام"},
+        {fr:"près de", ar:"قريب من"},
+        {fr:"loin de", ar:"بعيد عن"},
+        {fr:"grand(e)", ar:"كبير / كبيرة"},
+        {fr:"petit(e)", ar:"صغير / صغيرة"},
+      ],
+      hints: [
+        {ar:"استمع وحدد: كم شخص يتكلم؟ واحد ولا أكثر؟", fr:"Combien de personnes parlent ?"},
+        {ar:"انتبه للأرقام: الطابق وعدد الغرف", fr:"Fais attention aux chiffres"},
+        {ar:"ركّز على « près de » و « loin de » — قريب ولا بعيد؟", fr:"près de = قريب / loin de = بعيد"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل", fr:"Écoute au moins deux fois"},
+        {ar:"لا تحاول فهم كل كلمة — ركّز على المعلومات المطلوبة", fr:"Concentre-toi sur les informations demandées"},
+        {ar:"اكتب الأرقام والأسماء التي تسمعها", fr:"Note les chiffres et les noms"},
+      ]
+    }
+  }
+];
+
+function initD5CO(num) {
+  const d5c = '#667eea', d5g = 'linear-gradient(135deg,#667eea,#764ba2)';
+  const data = d5COData[num - 1];
+  if(!data) return;
+  const el = document.getElementById('d5-co'+num+'-content');
+  if(!el) return;
+
+  const qId = 'd5co'+num;
+
+  // Build vocab HTML (FR + AR only, well aligned)
+  const vocabHTML = data.aide.vocab.map(v =>
+    `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.85rem">
+      <span style="font-weight:700;color:${d5c};flex:1;text-align:left;direction:ltr">${v.fr}</span>
+      <span style="font-family:'Tajawal',sans-serif;font-weight:600;color:var(--dark);flex:1;text-align:right;direction:rtl">${v.ar}</span>
+    </div>`
+  ).join('');
+
+  const hintsHTML = data.aide.hints.map(h =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">💡 ${h.ar}</div>
+      <div style="color:${d5c};font-weight:600;font-size:0.78rem;text-align:left">${h.fr}</div>
+    </div>`
+  ).join('');
+
+  const strategiesHTML = data.aide.strategies.map(s =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">🧠 ${s.ar}</div>
+      <div style="color:${d5c};font-weight:600;font-size:0.78rem;text-align:left">${s.fr}</div>
+    </div>`
+  ).join('');
+
+  // Build questions HTML
+  const questionsHTML = data.questions.map((q, i) => {
+    if(q.type === 'yesno') {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'oui','${q.answer}')" style="flex:1">Oui ✅</button>
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'non','${q.answer}')" style="flex:1">Non ❌</button>
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    } else {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          ${q.opts.map(o => `<button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'${o.replace(/'/g,"\\'")}','${q.answer.replace(/'/g,"\\'")}')" style="flex:1">${o}</button>`).join('')}
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    }
+  }).join('');
+
+  el.innerHTML = `
+    <!-- AUDIO SCRIPT -->
+    <div style="background:var(--card-bg);border-radius:18px;padding:1.2rem;margin-bottom:1.2rem;box-shadow:var(--shadow);border-right:4px solid ${d5c}">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.8rem">
+        <span style="font-size:1.8rem">${data.icon}</span>
+        <div>
+          <div style="font-size:1rem;font-weight:800;color:${d5c}">${data.title}</div>
+          <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:var(--light);direction:rtl">${data.titleAr}</div>
+        </div>
+      </div>
+
+      <!-- Audio player -->
+      <div style="margin-bottom:1rem">
+        <audio id="d5-co${num}-audio" src="audio/d5-co${num}.mp3" preload="metadata"
+          style="width:100%;border-radius:99px;height:42px;outline:none" controls></audio>
+      </div>
+
+      <div style="font-size:0.78rem;font-weight:600;color:var(--mid);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px">📜 Script :</div>
+
+      <!-- Toggle script -->
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.textContent=this.nextElementSibling.style.display==='none'?'👁️ Voir le script':'🙈 Cacher le script'"
+        class="btn" style="font-size:0.78rem;padding:4px 14px;margin-bottom:8px;border-color:${d5c};color:${d5c}">
+        👁️ Voir le script
+      </button>
+      <div style="display:none;background:#F8F7FF;border-radius:12px;padding:1rem;font-size:0.85rem;line-height:2;color:var(--dark)">
+        ${data.script}
+      </div>
+    </div>
+
+    <!-- CONSIGNE -->
+    <div style="background:#FFF8E1;border-left:4px solid #FFD54F;border-radius:0 10px 10px 0;padding:0.7rem 1rem;margin-bottom:1.2rem;font-size:0.85rem">
+      <strong>📋 Consigne :</strong> Écoute bien le dialogue puis réponds aux questions.
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:#6B4F1D;margin-top:4px;direction:rtl;text-align:right">استمع جيدا ثم أجب عن الأسئلة</div>
+    </div>
+
+    <!-- QUESTIONS -->
+    <div style="margin-bottom:1.2rem">
+      <div style="font-size:0.95rem;font-weight:800;color:${d5c};margin-bottom:0.6rem">📝 Questions :</div>
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.8rem;color:var(--light);margin-bottom:0.8rem;direction:rtl;text-align:right">استمع ثم أجب عن الأسئلة التالية</div>
+      ${questionsHTML}
+      <div id="${qId}-score" style="text-align:center;margin-top:0.8rem"></div>
+      <div style="text-align:center;margin-top:0.5rem">
+        <button class="btn" style="border-color:${d5c};color:${d5c}" onclick="coReset('${qId}',${data.questions.length})">🔄 Recommencer</button>
+      </div>
+    </div>
+
+    <!-- AIDE POUR COMPRENDRE -->
+    <div style="margin-bottom:1.2rem">
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-aide-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid #10B981;background:#ECFDF5;color:#065F46;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">🧩 <span>Aide pour comprendre</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— مساعدة للفهم</span></span>
+        <span class="co-aide-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #D1FAE5;border-top:none;border-radius:0 0 14px 14px;overflow:hidden">
+        <!-- Vocab -->
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5">📖 Vocabulaire — <span style="font-family:'Tajawal',sans-serif">المفردات</span></div>
+        ${vocabHTML}
+        <!-- Hints -->
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">💡 Conseils d'écoute — <span style="font-family:'Tajawal',sans-serif">نصائح للاستماع</span></div>
+        ${hintsHTML}
+        <!-- Strategies -->
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">🧠 Stratégies — <span style="font-family:'Tajawal',sans-serif">استراتيجيات</span></div>
+        ${strategiesHTML}
+      </div>
+    </div>
+
+    <!-- ANSWERS (hidden toggle) -->
+    <div>
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-ans-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid ${d5c};background:#EBF4FF;color:#1E40AF;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">✅ <span>Réponses</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— الإجابات</span></span>
+        <span class="co-ans-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #BFDBFE;border-top:none;border-radius:0 0 14px 14px;padding:1rem;background:#F0F7FF">
+        ${data.questions.map((q,i) => `<div style="padding:4px 0;font-size:0.85rem;font-weight:600;color:#1E40AF">${q.q} → <strong style="color:#059669">${q.answer}</strong></div>`).join('')}
+      </div>
+    </div>
+  `;
+}
+
+// CO answer checking
+if(!window._coScores) window._coScores = {};
+
+function coAnswer(btn, qId, idx, chosen, correct) {
+  const fb = document.getElementById(qId+'-fb-'+idx);
+  if(btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
+
+  const parent = btn.parentElement;
+  const buttons = parent.querySelectorAll('.choice-btn');
+
+  const isCorrect = chosen.toLowerCase() === correct.toLowerCase();
+
+  if(isCorrect) {
+    btn.classList.add('correct');
+    if(fb) fb.innerHTML = '<div style="font-size:0.78rem;font-weight:700;color:#276749;background:#F0FFF4;padding:4px 10px;border-radius:8px">✅ !أحسنت — Bravo</div>';
+  } else {
+    btn.classList.add('wrong');
+    buttons.forEach(b => { if(b !== btn && (b.textContent.toLowerCase().includes(correct.toLowerCase()) || b.textContent.includes(correct.charAt(0).toUpperCase()+correct.slice(1)))) b.classList.add('correct'); });
+    if(fb) fb.innerHTML = `<div style="font-size:0.78rem;font-weight:700;color:#9B2C2C;background:#FFF5F5;padding:4px 10px;border-radius:8px">❌ الجواب الصحيح: <strong style="color:#276749">${correct}</strong></div>`;
+  }
+
+  // Disable all buttons
+  buttons.forEach(b => { b.style.pointerEvents='none'; b.style.opacity='0.85'; });
+
+  // Track score
+  if(!window._coScores[qId]) window._coScores[qId] = {correct:0, total:0, answered:{}};
+  if(!window._coScores[qId].answered[idx]) {
+    window._coScores[qId].answered[idx] = true;
+    window._coScores[qId].total++;
+    if(isCorrect) window._coScores[qId].correct++;
+  }
+
+  // Show score if all answered
+  // Derive content element ID generically: qId like "d5co1" → "d5-co1-content"
+  const coContentId = qId.replace(/^(d\d+)co(\d+)$/, '$1-co$2-content');
+  const totalQ = document.querySelectorAll('#'+coContentId+' .co-question').length;
+  if(window._coScores[qId].total >= totalQ) {
+    const sc = window._coScores[qId];
+    const pct = Math.round(sc.correct/totalQ*100);
+    const scoreEl = document.getElementById(qId+'-score');
+    if(scoreEl) {
+      scoreEl.innerHTML = `<div class="gram-result" style="background:${pct>=60?'#F0FFF4':'#FFF5F5'};color:${pct>=60?'#276749':'#9B2C2C'};font-size:0.9rem;padding:10px;border-radius:12px">
+        ${pct>=80?'🎉':'🙂'} ${sc.correct}/${totalQ} — ${pct}%
+        <div style="font-family:'Tajawal',sans-serif;font-size:0.8rem;margin-top:4px;direction:rtl">${pct>=80?'ممتاز! أحسنت':pct>=60?'جيد! حاول مرة أخرى للتحسن':'لا بأس! استمع مرة أخرى وحاول من جديد'}</div>
+      </div>`;
+    }
+    celebrateIfPerfect(sc.correct, totalQ);
+  }
+}
+
+function coReset(qId, totalQ) {
+  window._coScores[qId] = {correct:0, total:0, answered:{}};
+  // Derive dossier and activity number from qId: e.g. "d6co3" → d="d6", num=3
+  const m = qId.match(/^(d\d+)co(\d+)$/);
+  if(!m) return;
+  const dossier = m[1], num = parseInt(m[2]);
+  if(dossier==='d5') initD5CO(num);
+  else if(dossier==='d6') initD6CO(num);
+  else if(dossier==='d7') initD7CO(num);
+  else if(dossier==='d8') initD8CO(num);
+}
+
+// ============================================================
+// DOSSIER 6 — COMPRÉHENSION ORALE DATA & FUNCTIONS
+// ============================================================
+
+const d6COData = [
+  // ── ACTIVITÉ 1 : À Paris ──
+  {
+    title: "Activité 1 — À Paris",
+    titleAr: "النشاط ١ — في باريس",
+    icon: "✈️",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Layla :</strong> Karim, tu vois ce grand monument là-bas ?<br>
+<strong>Karim :</strong> Oui ! C'est la tour Eiffel ! Elle est magnifique !<br>
+<strong>Layla :</strong> Comment est-ce qu'on y va ?<br>
+<strong>Karim :</strong> On peut prendre le métro. C'est rapide et pas cher.<br>
+<strong>Layla :</strong> Et après, on peut aller au musée du Louvre ?<br>
+<strong>Karim :</strong> Bien sûr ! Il est à côté. On peut y aller à pied.<br>
+<strong>Layla :</strong> Super ! J'adore visiter les musées !`,
+    scriptAudio: "Karim, tu vois ce grand monument là-bas ? — Oui ! C'est la tour Eiffel ! Elle est magnifique ! — Comment est-ce qu'on y va ? — On peut prendre le métro. C'est rapide et pas cher. — Et après, on peut aller au musée du Louvre ? — Bien sûr ! Il est à côté. On peut y aller à pied. — Super ! J'adore visiter les musées !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Quel monument Karim et Layla voient-ils ?", type:"ab", opts:["La tour Eiffel","L'Arc de Triomphe"], answer:"La tour Eiffel"},
+      {q: "3. On parle de quel sujet ?", type:"ab", opts:["Une visite à Paris","Une visite au Koweït"], answer:"Une visite à Paris"},
+      {q: "4. Comment Karim propose-t-il d'aller à la tour Eiffel ?", type:"ab", opts:["En voiture","En métro"], answer:"En métro"},
+      {q: "5. Le Louvre est loin de la tour Eiffel ?", type:"yesno", answer:"non"},
+      {q: "6. Layla aime visiter les musées ?", type:"yesno", answer:"oui"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"la tour Eiffel", ar:"برج إيفل"},
+        {fr:"le musée", ar:"المتحف"},
+        {fr:"le métro", ar:"المترو"},
+        {fr:"à pied", ar:"مشياً على الأقدام"},
+        {fr:"rapide", ar:"سريع"},
+        {fr:"à côté", ar:"بجانب"},
+        {fr:"un monument", ar:"معلم سياحي"},
+        {fr:"magnifique", ar:"رائع"},
+      ],
+      hints: [
+        {ar:"استمع إلى أسماء المعالم السياحية", fr:"Écoute les noms des monuments"},
+        {ar:"انتبه لوسيلة النقل: métro, bus, à pied", fr:"Fais attention au moyen de transport"},
+        {ar:"ركّز على الأرقام: خطوط المترو، الطوابق", fr:"Fais attention aux chiffres"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 2 : Au musée du Louvre ──
+  {
+    title: "Activité 2 — Au musée du Louvre",
+    titleAr: "النشاط ٢ — في متحف اللوفر",
+    icon: "🖼️",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Guide :</strong> Bienvenue au musée du Louvre ! Je suis votre guide. Je m'appelle Marie.<br>
+<strong>Visiteur :</strong> C'est très grand ici ! Il y a beaucoup de tableaux.<br>
+<strong>Guide :</strong> Oui, le Louvre est l'un des plus grands musées du monde.<br>
+<strong>Visiteur :</strong> Où est la Joconde ?<br>
+<strong>Guide :</strong> Elle est au premier étage, dans la salle sept. Suivez-moi !<br>
+<strong>Visiteur :</strong> Est-ce qu'on peut prendre des photos ?<br>
+<strong>Guide :</strong> Oui, mais sans flash, s'il vous plaît.`,
+    scriptAudio: "Bienvenue au musée du Louvre ! Je suis votre guide. Je m'appelle Marie. — C'est très grand ici ! Il y a beaucoup de tableaux. — Oui, le Louvre est l'un des plus grands musées du monde. — Où est la Joconde ? — Elle est au premier étage, dans la salle sept. Suivez-moi ! — Est-ce qu'on peut prendre des photos ? — Oui, mais sans flash, s'il vous plaît.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Où se passe le dialogue ?", type:"ab", opts:["Au musée du Louvre","Au musée d'Orsay"], answer:"Au musée du Louvre"},
+      {q: "3. Comment s'appelle la guide ?", type:"ab", opts:["Marie","Sophie"], answer:"Marie"},
+      {q: "4. Où est la Joconde ?", type:"ab", opts:["Rez-de-chaussée","Premier étage"], answer:"Premier étage"},
+      {q: "5. Dans quelle salle est la Joconde ?", type:"ab", opts:["Salle sept","Salle cinq"], answer:"Salle sept"},
+      {q: "6. Peut-on prendre des photos avec flash ?", type:"yesno", answer:"non"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"le musée", ar:"المتحف"},
+        {fr:"un tableau", ar:"لوحة"},
+        {fr:"la Joconde", ar:"الموناليزا"},
+        {fr:"le premier étage", ar:"الطابق الأول"},
+        {fr:"une salle", ar:"قاعة"},
+        {fr:"un guide", ar:"مرشد سياحي"},
+        {fr:"sans flash", ar:"بدون فلاش"},
+        {fr:"le monde", ar:"العالم"},
+      ],
+      hints: [
+        {ar:"استمع إلى أسماء المعالم السياحية", fr:"Écoute les noms des monuments"},
+        {ar:"انتبه لوسيلة النقل: métro, bus, à pied", fr:"Fais attention au moyen de transport"},
+        {ar:"ركّز على الأرقام: خطوط المترو، الطوابق", fr:"Fais attention aux chiffres"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 3 : Prendre le métro ──
+  {
+    title: "Activité 3 — Prendre le métro",
+    titleAr: "النشاط ٣ — ركوب المترو",
+    icon: "🚇",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Yasmine :</strong> Excuse-moi, pour aller à la tour Eiffel, je prends le bus ou le métro ?<br>
+<strong>Inès :</strong> Je te conseille le métro. C'est plus rapide.<br>
+<strong>Yasmine :</strong> Quel numéro ?<br>
+<strong>Inès :</strong> La ligne six. Tu descends à la station Bir-Hakeim.<br>
+<strong>Yasmine :</strong> Et combien de temps ça prend ?<br>
+<strong>Inès :</strong> Environ vingt minutes depuis ici.<br>
+<strong>Yasmine :</strong> Merci beaucoup !`,
+    scriptAudio: "Excuse-moi, pour aller à la tour Eiffel, je prends le bus ou le métro ? — Je te conseille le métro. C'est plus rapide. — Quel numéro ? — La ligne six. Tu descends à la station Bir-Hakeim. — Et combien de temps ça prend ? — Environ vingt minutes depuis ici. — Merci beaucoup !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Yasmine veut aller où ?", type:"ab", opts:["À la tour Eiffel","Au Louvre"], answer:"À la tour Eiffel"},
+      {q: "3. Inès conseille quel moyen de transport ?", type:"ab", opts:["Le bus","Le métro"], answer:"Le métro"},
+      {q: "4. C'est quelle ligne de métro ?", type:"ab", opts:["Ligne six","Ligne quatre"], answer:"Ligne six"},
+      {q: "5. Combien de temps prend le trajet ?", type:"ab", opts:["Dix minutes","Vingt minutes"], answer:"Vingt minutes"},
+      {q: "6. Le métro est plus rapide que le bus ?", type:"yesno", answer:"oui"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"le métro", ar:"المترو"},
+        {fr:"la ligne", ar:"الخط"},
+        {fr:"la station", ar:"المحطة"},
+        {fr:"rapide", ar:"سريع"},
+        {fr:"conseiller", ar:"ينصح"},
+        {fr:"descendre", ar:"ينزل"},
+        {fr:"environ", ar:"تقريباً"},
+        {fr:"depuis ici", ar:"من هنا"},
+      ],
+      hints: [
+        {ar:"استمع إلى أسماء المعالم السياحية", fr:"Écoute les noms des monuments"},
+        {ar:"انتبه لوسيلة النقل: métro, bus, à pied", fr:"Fais attention au moyen de transport"},
+        {ar:"ركّز على الأرقام: خطوط المترو، الطوابق", fr:"Fais attention aux chiffres"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 4 : Ma visite à Paris ──
+  {
+    title: "Activité 4 — Ma visite à Paris",
+    titleAr: "النشاط ٤ — زيارتي لباريس",
+    icon: "📸",
+    script: `<strong>Monologue :</strong><br><br>
+<strong>Nour :</strong> Bonjour ! Je m'appelle Nour. Je suis en visite à Paris.<br><br>
+<strong>Nour :</strong> Hier, j'ai visité la tour Eiffel. Elle est très haute et très belle !<br><br>
+<strong>Nour :</strong> Ensuite, je suis allée au musée du Louvre. J'ai vu beaucoup de tableaux célèbres.<br><br>
+<strong>Nour :</strong> Pour me déplacer, je prends le métro. C'est pratique et rapide.<br><br>
+<strong>Nour :</strong> Demain, je vais visiter le château de Versailles. Je suis très contente !`,
+    scriptAudio: "Bonjour ! Je m'appelle Nour. Je suis en visite à Paris. Hier, j'ai visité la tour Eiffel. Elle est très haute et très belle ! Ensuite, je suis allée au musée du Louvre. J'ai vu beaucoup de tableaux célèbres. Pour me déplacer, je prends le métro. C'est pratique et rapide. Demain, je vais visiter le château de Versailles. Je suis très contente !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["1 personne","2 personnes"], answer:"1 personne"},
+      {q: "2. Comment s'appelle la personne qui parle ?", type:"ab", opts:["Nour","Layla"], answer:"Nour"},
+      {q: "3. Qu'est-ce que Nour a visité hier ?", type:"ab", opts:["La tour Eiffel","Le château de Versailles"], answer:"La tour Eiffel"},
+      {q: "4. Qu'est-ce que Nour a vu au Louvre ?", type:"ab", opts:["Des sculptures","Des tableaux célèbres"], answer:"Des tableaux célèbres"},
+      {q: "5. Nour prend quel moyen de transport ?", type:"ab", opts:["Le bus","Le métro"], answer:"Le métro"},
+      {q: "6. Nour va visiter le château de Versailles demain ?", type:"yesno", answer:"oui"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"la tour Eiffel", ar:"برج إيفل"},
+        {fr:"le musée", ar:"المتحف"},
+        {fr:"le château", ar:"القصر"},
+        {fr:"un tableau", ar:"لوحة"},
+        {fr:"le métro", ar:"المترو"},
+        {fr:"célèbre", ar:"مشهور"},
+        {fr:"pratique", ar:"عملي / مريح"},
+        {fr:"se déplacer", ar:"التنقل"},
+      ],
+      hints: [
+        {ar:"استمع إلى أسماء المعالم السياحية", fr:"Écoute les noms des monuments"},
+        {ar:"انتبه لوسيلة النقل: métro, bus, à pied", fr:"Fais attention au moyen de transport"},
+        {ar:"ركّز على الأرقام: خطوط المترو، الطوابق", fr:"Fais attention aux chiffres"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  }
+];
+
+function initD6CO(num) {
+  const d6c = '#a855f7', d6g = 'linear-gradient(135deg,#a855f7,#7c3aed)';
+  const data = d6COData[num - 1];
+  if(!data) return;
+  const el = document.getElementById('d6-co'+num+'-content');
+  if(!el) return;
+
+  const qId = 'd6co'+num;
+
+  const vocabHTML = data.aide.vocab.map(v =>
+    `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.85rem">
+      <span style="font-weight:700;color:${d6c};flex:1;text-align:left;direction:ltr">${v.fr}</span>
+      <span style="font-family:'Tajawal',sans-serif;font-weight:600;color:var(--dark);flex:1;text-align:right;direction:rtl">${v.ar}</span>
+    </div>`
+  ).join('');
+
+  const hintsHTML = data.aide.hints.map(h =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">💡 ${h.ar}</div>
+      <div style="color:${d6c};font-weight:600;font-size:0.78rem;text-align:left">${h.fr}</div>
+    </div>`
+  ).join('');
+
+  const strategiesHTML = data.aide.strategies.map(s =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">🧠 ${s.ar}</div>
+      <div style="color:${d6c};font-weight:600;font-size:0.78rem;text-align:left">${s.fr}</div>
+    </div>`
+  ).join('');
+
+  const questionsHTML = data.questions.map((q, i) => {
+    if(q.type === 'yesno') {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'oui','${q.answer}')" style="flex:1">Oui ✅</button>
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'non','${q.answer}')" style="flex:1">Non ❌</button>
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    } else {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          ${q.opts.map(o => `<button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'${o.replace(/'/g,"\\'")}','${q.answer.replace(/'/g,"\\'")}')" style="flex:1">${o}</button>`).join('')}
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    }
+  }).join('');
+
+  el.innerHTML = `
+    <div style="background:var(--card-bg);border-radius:18px;padding:1.2rem;margin-bottom:1.2rem;box-shadow:var(--shadow);border-right:4px solid ${d6c}">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.8rem">
+        <span style="font-size:1.8rem">${data.icon}</span>
+        <div>
+          <div style="font-size:1rem;font-weight:800;color:${d6c}">${data.title}</div>
+          <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:var(--light);direction:rtl">${data.titleAr}</div>
+        </div>
+      </div>
+      <div style="margin-bottom:1rem">
+        <audio id="d6-co${num}-audio" src="audio/d6-co${num}.mp3" preload="metadata"
+          style="width:100%;border-radius:99px;height:42px;outline:none" controls></audio>
+      </div>
+      <div style="font-size:0.78rem;font-weight:600;color:var(--mid);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px">📜 Script :</div>
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.textContent=this.nextElementSibling.style.display==='none'?'👁️ Voir le script':'🙈 Cacher le script'"
+        class="btn" style="font-size:0.78rem;padding:4px 14px;margin-bottom:8px;border-color:${d6c};color:${d6c}">
+        👁️ Voir le script
+      </button>
+      <div style="display:none;background:#F8F7FF;border-radius:12px;padding:1rem;font-size:0.85rem;line-height:2;color:var(--dark)">
+        ${data.script}
+      </div>
+    </div>
+    <div style="background:#FFF8E1;border-left:4px solid #FFD54F;border-radius:0 10px 10px 0;padding:0.7rem 1rem;margin-bottom:1.2rem;font-size:0.85rem">
+      <strong>📋 Consigne :</strong> Écoute bien le dialogue puis réponds aux questions.
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:#6B4F1D;margin-top:4px;direction:rtl;text-align:right">استمع جيدا ثم أجب عن الأسئلة</div>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <div style="font-size:0.95rem;font-weight:800;color:${d6c};margin-bottom:0.6rem">📝 Questions :</div>
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.8rem;color:var(--light);margin-bottom:0.8rem;direction:rtl;text-align:right">استمع ثم أجب عن الأسئلة التالية</div>
+      ${questionsHTML}
+      <div id="${qId}-score" style="text-align:center;margin-top:0.8rem"></div>
+      <div style="text-align:center;margin-top:0.5rem">
+        <button class="btn" style="border-color:${d6c};color:${d6c}" onclick="coReset('${qId}',${data.questions.length})">🔄 Recommencer</button>
+      </div>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-aide-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid #10B981;background:#ECFDF5;color:#065F46;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">🧩 <span>Aide pour comprendre</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— مساعدة للفهم</span></span>
+        <span class="co-aide-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #D1FAE5;border-top:none;border-radius:0 0 14px 14px;overflow:hidden">
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5">📖 Vocabulaire — <span style="font-family:'Tajawal',sans-serif">المفردات</span></div>
+        ${vocabHTML}
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">💡 Conseils d'écoute — <span style="font-family:'Tajawal',sans-serif">نصائح للاستماع</span></div>
+        ${hintsHTML}
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">🧠 Stratégies — <span style="font-family:'Tajawal',sans-serif">استراتيجيات</span></div>
+        ${strategiesHTML}
+      </div>
+    </div>
+    <div>
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-ans-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid ${d6c};background:#EBF4FF;color:#1E40AF;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">✅ <span>Réponses</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— الإجابات</span></span>
+        <span class="co-ans-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #BFDBFE;border-top:none;border-radius:0 0 14px 14px;padding:1rem;background:#F0F7FF">
+        ${data.questions.map((q,i) => `<div style="padding:4px 0;font-size:0.85rem;font-weight:600;color:#1E40AF">${q.q} → <strong style="color:#059669">${q.answer}</strong></div>`).join('')}
+      </div>
+    </div>
+  `;
+}
+
+// ============================================================
+// DOSSIER 7 — COMPRÉHENSION ORALE DATA & FUNCTIONS
+// ============================================================
+
+const d7COData = [
+  // ── ACTIVITÉ 1 : Une réservation ──
+  {
+    title: "Activité 1 — Une réservation",
+    titleAr: "النشاط ١ — حجز طاولة",
+    icon: "📞",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Adam :</strong> Restaurant Le Soleil, bonjour !<br>
+<strong>Rima :</strong> Bonjour ! Je voudrais réserver une table pour ce soir, s'il vous plaît.<br>
+<strong>Adam :</strong> Pour combien de personnes ?<br>
+<strong>Rima :</strong> Pour quatre personnes.<br>
+<strong>Adam :</strong> À quelle heure ?<br>
+<strong>Rima :</strong> À vingt heures.<br>
+<strong>Adam :</strong> C'est parfait. Votre nom, s'il vous plaît ?<br>
+<strong>Rima :</strong> Madame Benali.<br>
+<strong>Adam :</strong> Très bien, madame Benali. À ce soir !`,
+    scriptAudio: "Restaurant Le Soleil, bonjour ! — Bonjour ! Je voudrais réserver une table pour ce soir, s'il vous plaît. — Pour combien de personnes ? — Pour quatre personnes. — À quelle heure ? — À vingt heures. — C'est parfait. Votre nom, s'il vous plaît ? — Madame Benali. — Très bien, madame Benali. À ce soir !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Rima veut réserver une table pour combien de personnes ?", type:"ab", opts:["Deux","Quatre"], answer:"Quatre"},
+      {q: "3. À quelle heure est la réservation ?", type:"ab", opts:["19h00","20h00"], answer:"20h00"},
+      {q: "4. Comment s'appelle le restaurant ?", type:"ab", opts:["Le Jardin","Le Soleil"], answer:"Le Soleil"},
+      {q: "5. Quel est le nom de la cliente ?", type:"ab", opts:["Madame Benali","Madame Dupont"], answer:"Madame Benali"},
+      {q: "6. La réservation est pour ce soir ?", type:"yesno", answer:"oui"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"une réservation", ar:"حجز"},
+        {fr:"réserver", ar:"يحجز"},
+        {fr:"une table", ar:"طاولة"},
+        {fr:"le serveur", ar:"النادل"},
+        {fr:"ce soir", ar:"هذا المساء"},
+        {fr:"combien de personnes", ar:"كم شخص"},
+        {fr:"à quelle heure", ar:"في أي ساعة"},
+        {fr:"parfait", ar:"مثالي"},
+      ],
+      hints: [
+        {ar:"استمع إلى الأرقام: عدد الأشخاص، الأسعار", fr:"Écoute les chiffres : personnes et prix"},
+        {ar:"انتبه للمراحل: entrée، plat principal، dessert", fr:"Repère les étapes du repas"},
+        {ar:"ركّز على ماذا يطلب كل شخص", fr:"Qui commande quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 2 : Commander un repas ──
+  {
+    title: "Activité 2 — Commander un repas",
+    titleAr: "النشاط ٢ — طلب الطعام",
+    icon: "🍽️",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Thomas :</strong> Bonsoir ! Vous avez choisi ?<br>
+<strong>Omar :</strong> Oui. Comme entrée, je prends la soupe du jour.<br>
+<strong>Fatima :</strong> Et moi, la salade verte, s'il vous plaît.<br>
+<strong>Thomas :</strong> Et comme plat principal ?<br>
+<strong>Omar :</strong> Le poulet rôti avec des frites.<br>
+<strong>Fatima :</strong> Le poisson grillé pour moi.<br>
+<strong>Thomas :</strong> Comme boisson ?<br>
+<strong>Omar :</strong> De l'eau minérale, s'il vous plaît.<br>
+<strong>Fatima :</strong> Un jus d'orange pour moi.<br>
+<strong>Thomas :</strong> Très bien, je reviens dans quelques minutes.`,
+    scriptAudio: "Bonsoir ! Vous avez choisi ? — Oui. Comme entrée, je prends la soupe du jour. — Et moi, la salade verte, s'il vous plaît. — Et comme plat principal ? — Le poulet rôti avec des frites. — Le poisson grillé pour moi. — Comme boisson ? — De l'eau minérale, s'il vous plaît. — Un jus d'orange pour moi. — Très bien, je reviens dans quelques minutes.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"3 personnes"},
+      {q: "2. Comme entrée, Omar prend quoi ?", type:"ab", opts:["La salade verte","La soupe du jour"], answer:"La soupe du jour"},
+      {q: "3. Comme plat principal, Fatima prend quoi ?", type:"ab", opts:["Le poulet rôti","Le poisson grillé"], answer:"Le poisson grillé"},
+      {q: "4. Omar prend quelle boisson ?", type:"ab", opts:["Un jus d'orange","De l'eau minérale"], answer:"De l'eau minérale"},
+      {q: "5. Fatima prend de l'eau minérale ?", type:"yesno", answer:"non"},
+      {q: "6. C'est quel moment de la journée ?", type:"ab", opts:["Déjeuner","Dîner"], answer:"Dîner"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"l'entrée", ar:"المقبلات"},
+        {fr:"le plat principal", ar:"الطبق الرئيسي"},
+        {fr:"la soupe", ar:"الشوربة"},
+        {fr:"la salade verte", ar:"السلطة الخضراء"},
+        {fr:"le poulet rôti", ar:"الدجاج المشوي"},
+        {fr:"le poisson grillé", ar:"السمك المشوي"},
+        {fr:"l'eau minérale", ar:"الماء المعدني"},
+        {fr:"le jus d'orange", ar:"عصير البرتقال"},
+      ],
+      hints: [
+        {ar:"استمع إلى الأرقام: عدد الأشخاص، الأسعار", fr:"Écoute les chiffres : personnes et prix"},
+        {ar:"انتبه للمراحل: entrée، plat principal، dessert", fr:"Repère les étapes du repas"},
+        {ar:"ركّز على ماذا يطلب كل شخص", fr:"Qui commande quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 3 : L'addition ──
+  {
+    title: "Activité 3 — L'addition",
+    titleAr: "النشاط ٣ — الفاتورة",
+    icon: "🧾",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Mehdi :</strong> Excusez-moi ! L'addition, s'il vous plaît.<br>
+<strong>Lucas :</strong> Voilà monsieur. Cela fait quarante-deux euros.<br>
+<strong>Mehdi :</strong> Le service est compris ?<br>
+<strong>Lucas :</strong> Oui, le service est compris.<br>
+<strong>Mehdi :</strong> Voilà cinquante euros.<br>
+<strong>Lucas :</strong> Je vous rends huit euros. Merci et bonne soirée !<br>
+<strong>Mehdi :</strong> Merci, le repas était délicieux !`,
+    scriptAudio: "Excusez-moi ! L'addition, s'il vous plaît. — Voilà monsieur. Cela fait quarante-deux euros. — Le service est compris ? — Oui, le service est compris. — Voilà cinquante euros. — Je vous rends huit euros. Merci et bonne soirée ! — Merci, le repas était délicieux !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Combien coûte l'addition ?", type:"ab", opts:["Trente-deux euros","Quarante-deux euros"], answer:"Quarante-deux euros"},
+      {q: "3. Le service est compris ?", type:"yesno", answer:"oui"},
+      {q: "4. Mehdi donne combien d'euros ?", type:"ab", opts:["Cinquante euros","Quarante euros"], answer:"Cinquante euros"},
+      {q: "5. Le serveur rend combien d'euros à Mehdi ?", type:"ab", opts:["Six euros","Huit euros"], answer:"Huit euros"},
+      {q: "6. Mehdi a aimé le repas ?", type:"yesno", answer:"oui"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"l'addition", ar:"الفاتورة"},
+        {fr:"le service est compris", ar:"الخدمة مشمولة"},
+        {fr:"rendre la monnaie", ar:"إعادة الباقي"},
+        {fr:"délicieux", ar:"لذيذ"},
+        {fr:"combien", ar:"كم"},
+        {fr:"cela fait", ar:"يبلغ / المجموع"},
+        {fr:"bonne soirée", ar:"مساء طيب"},
+        {fr:"merci", ar:"شكراً"},
+      ],
+      hints: [
+        {ar:"استمع إلى الأرقام: عدد الأشخاص، الأسعار", fr:"Écoute les chiffres : personnes et prix"},
+        {ar:"انتبه للمراحل: entrée، plat principal، dessert", fr:"Repère les étapes du repas"},
+        {ar:"ركّز على ماذا يطلب كل شخص", fr:"Qui commande quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 4 : Mon restaurant préféré ──
+  {
+    title: "Activité 4 — Mon restaurant préféré",
+    titleAr: "النشاط ٤ — مطعمي المفضل",
+    icon: "⭐",
+    script: `<strong>Monologue :</strong><br><br>
+<strong>Lamine :</strong> Bonjour ! Je m'appelle Lamine.<br><br>
+<strong>Lamine :</strong> Mon restaurant préféré s'appelle Le Jardin. C'est un restaurant français.<br><br>
+<strong>Lamine :</strong> Comme entrée, je commande toujours une soupe de légumes.<br><br>
+<strong>Lamine :</strong> Comme plat principal, j'aime le steak avec des frites.<br><br>
+<strong>Lamine :</strong> Et comme dessert, je prends souvent la tarte aux fraises.<br><br>
+<strong>Lamine :</strong> Le service est excellent et les prix sont raisonnables.`,
+    scriptAudio: "Bonjour ! Je m'appelle Lamine. Mon restaurant préféré s'appelle Le Jardin. C'est un restaurant français. Comme entrée, je commande toujours une soupe de légumes. Comme plat principal, j'aime le steak avec des frites. Et comme dessert, je prends souvent la tarte aux fraises. Le service est excellent et les prix sont raisonnables.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["1 personne","2 personnes"], answer:"1 personne"},
+      {q: "2. Comment s'appelle la personne qui parle ?", type:"ab", opts:["Lamine","Thomas"], answer:"Lamine"},
+      {q: "3. Comment s'appelle son restaurant préféré ?", type:"ab", opts:["Le Soleil","Le Jardin"], answer:"Le Jardin"},
+      {q: "4. Quelle est son entrée préférée ?", type:"ab", opts:["La salade verte","La soupe de légumes"], answer:"La soupe de légumes"},
+      {q: "5. Quel est son plat principal ?", type:"ab", opts:["Le steak avec des frites","Le poulet rôti"], answer:"Le steak avec des frites"},
+      {q: "6. Quel est son dessert préféré ?", type:"ab", opts:["La tarte aux fraises","Le gâteau au chocolat"], answer:"La tarte aux fraises"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"une réservation", ar:"حجز"},
+        {fr:"le serveur", ar:"النادل"},
+        {fr:"la carte / le menu", ar:"القائمة"},
+        {fr:"l'entrée", ar:"المقبلات"},
+        {fr:"le plat principal", ar:"الطبق الرئيسي"},
+        {fr:"le dessert", ar:"الحلوى"},
+        {fr:"l'addition", ar:"الفاتورة"},
+        {fr:"raisonnable", ar:"معقول"},
+      ],
+      hints: [
+        {ar:"استمع إلى الأرقام: عدد الأشخاص، الأسعار", fr:"Écoute les chiffres : personnes et prix"},
+        {ar:"انتبه للمراحل: entrée، plat principal، dessert", fr:"Repère les étapes du repas"},
+        {ar:"ركّز على ماذا يطلب كل شخص", fr:"Qui commande quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  }
+];
+
+function initD7CO(num) {
+  const d7c = '#f97316', d7g = 'linear-gradient(135deg,#f97316,#ea580c)';
+  const data = d7COData[num - 1];
+  if(!data) return;
+  const el = document.getElementById('d7-co'+num+'-content');
+  if(!el) return;
+
+  const qId = 'd7co'+num;
+
+  const vocabHTML = data.aide.vocab.map(v =>
+    `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.85rem">
+      <span style="font-weight:700;color:${d7c};flex:1;text-align:left;direction:ltr">${v.fr}</span>
+      <span style="font-family:'Tajawal',sans-serif;font-weight:600;color:var(--dark);flex:1;text-align:right;direction:rtl">${v.ar}</span>
+    </div>`
+  ).join('');
+
+  const hintsHTML = data.aide.hints.map(h =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">💡 ${h.ar}</div>
+      <div style="color:${d7c};font-weight:600;font-size:0.78rem;text-align:left">${h.fr}</div>
+    </div>`
+  ).join('');
+
+  const strategiesHTML = data.aide.strategies.map(s =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">🧠 ${s.ar}</div>
+      <div style="color:${d7c};font-weight:600;font-size:0.78rem;text-align:left">${s.fr}</div>
+    </div>`
+  ).join('');
+
+  const questionsHTML = data.questions.map((q, i) => {
+    if(q.type === 'yesno') {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'oui','${q.answer}')" style="flex:1">Oui ✅</button>
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'non','${q.answer}')" style="flex:1">Non ❌</button>
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    } else {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          ${q.opts.map(o => `<button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'${o.replace(/'/g,"\\'")}','${q.answer.replace(/'/g,"\\'")}')" style="flex:1">${o}</button>`).join('')}
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    }
+  }).join('');
+
+  el.innerHTML = `
+    <div style="background:var(--card-bg);border-radius:18px;padding:1.2rem;margin-bottom:1.2rem;box-shadow:var(--shadow);border-right:4px solid ${d7c}">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.8rem">
+        <span style="font-size:1.8rem">${data.icon}</span>
+        <div>
+          <div style="font-size:1rem;font-weight:800;color:${d7c}">${data.title}</div>
+          <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:var(--light);direction:rtl">${data.titleAr}</div>
+        </div>
+      </div>
+      <div style="margin-bottom:1rem">
+        <audio id="d7-co${num}-audio" src="audio/d7-co${num}.mp3" preload="metadata"
+          style="width:100%;border-radius:99px;height:42px;outline:none" controls></audio>
+      </div>
+      <div style="font-size:0.78rem;font-weight:600;color:var(--mid);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px">📜 Script :</div>
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.textContent=this.nextElementSibling.style.display==='none'?'👁️ Voir le script':'🙈 Cacher le script'"
+        class="btn" style="font-size:0.78rem;padding:4px 14px;margin-bottom:8px;border-color:${d7c};color:${d7c}">
+        👁️ Voir le script
+      </button>
+      <div style="display:none;background:#F8F7FF;border-radius:12px;padding:1rem;font-size:0.85rem;line-height:2;color:var(--dark)">
+        ${data.script}
+      </div>
+    </div>
+    <div style="background:#FFF8E1;border-left:4px solid #FFD54F;border-radius:0 10px 10px 0;padding:0.7rem 1rem;margin-bottom:1.2rem;font-size:0.85rem">
+      <strong>📋 Consigne :</strong> Écoute bien le dialogue puis réponds aux questions.
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:#6B4F1D;margin-top:4px;direction:rtl;text-align:right">استمع جيدا ثم أجب عن الأسئلة</div>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <div style="font-size:0.95rem;font-weight:800;color:${d7c};margin-bottom:0.6rem">📝 Questions :</div>
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.8rem;color:var(--light);margin-bottom:0.8rem;direction:rtl;text-align:right">استمع ثم أجب عن الأسئلة التالية</div>
+      ${questionsHTML}
+      <div id="${qId}-score" style="text-align:center;margin-top:0.8rem"></div>
+      <div style="text-align:center;margin-top:0.5rem">
+        <button class="btn" style="border-color:${d7c};color:${d7c}" onclick="coReset('${qId}',${data.questions.length})">🔄 Recommencer</button>
+      </div>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-aide-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid #10B981;background:#ECFDF5;color:#065F46;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">🧩 <span>Aide pour comprendre</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— مساعدة للفهم</span></span>
+        <span class="co-aide-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #D1FAE5;border-top:none;border-radius:0 0 14px 14px;overflow:hidden">
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5">📖 Vocabulaire — <span style="font-family:'Tajawal',sans-serif">المفردات</span></div>
+        ${vocabHTML}
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">💡 Conseils d'écoute — <span style="font-family:'Tajawal',sans-serif">نصائح للاستماع</span></div>
+        ${hintsHTML}
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">🧠 Stratégies — <span style="font-family:'Tajawal',sans-serif">استراتيجيات</span></div>
+        ${strategiesHTML}
+      </div>
+    </div>
+    <div>
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-ans-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid ${d7c};background:#EBF4FF;color:#1E40AF;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">✅ <span>Réponses</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— الإجابات</span></span>
+        <span class="co-ans-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #BFDBFE;border-top:none;border-radius:0 0 14px 14px;padding:1rem;background:#F0F7FF">
+        ${data.questions.map((q,i) => `<div style="padding:4px 0;font-size:0.85rem;font-weight:600;color:#1E40AF">${q.q} → <strong style="color:#059669">${q.answer}</strong></div>`).join('')}
+      </div>
+    </div>
+  `;
+}
+
+// ============================================================
+// DOSSIER 8 — COMPRÉHENSION ORALE DATA & FUNCTIONS
+// ============================================================
+
+const d8COData = [
+  // ── ACTIVITÉ 1 : Chercher un vêtement ──
+  {
+    title: "Activité 1 — Chercher un vêtement",
+    titleAr: "النشاط ١ — البحث عن ملابس",
+    icon: "👗",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Clara :</strong> Bonjour madame ! Je peux vous aider ?<br>
+<strong>Wafa :</strong> Oui, je cherche une veste pour l'hiver.<br>
+<strong>Clara :</strong> Quelle couleur vous préférez ?<br>
+<strong>Wafa :</strong> Je voudrais quelque chose de noir ou de bleu marine.<br>
+<strong>Clara :</strong> Et quelle taille ?<br>
+<strong>Wafa :</strong> Je fais du trente-huit.<br>
+<strong>Clara :</strong> Voici une belle veste en laine. Elle est très chaude.<br>
+<strong>Wafa :</strong> J'aime bien ! Quel est le prix ?<br>
+<strong>Clara :</strong> Elle est à soixante-cinq euros.`,
+    scriptAudio: "Bonjour madame ! Je peux vous aider ? — Oui, je cherche une veste pour l'hiver. — Quelle couleur vous préférez ? — Je voudrais quelque chose de noir ou de bleu marine. — Et quelle taille ? — Je fais du trente-huit. — Voici une belle veste en laine. Elle est très chaude. — J'aime bien ! Quel est le prix ? — Elle est à soixante-cinq euros.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Wafa cherche quoi ?", type:"ab", opts:["Un manteau","Une veste"], answer:"Une veste"},
+      {q: "3. On parle de quel sujet ?", type:"ab", opts:["Les vêtements","Les chaussures"], answer:"Les vêtements"},
+      {q: "4. Quelle taille fait Wafa ?", type:"ab", opts:["Trente-six","Trente-huit"], answer:"Trente-huit"},
+      {q: "5. La veste est en quelle matière ?", type:"ab", opts:["En coton","En laine"], answer:"En laine"},
+      {q: "6. Quel est le prix de la veste ?", type:"ab", opts:["Cinquante-cinq euros","Soixante-cinq euros"], answer:"Soixante-cinq euros"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"un vêtement", ar:"ملابس"},
+        {fr:"une veste", ar:"سترة"},
+        {fr:"la taille", ar:"المقاس"},
+        {fr:"en laine", ar:"من الصوف"},
+        {fr:"en coton", ar:"من القطن"},
+        {fr:"le prix", ar:"السعر"},
+        {fr:"chercher", ar:"يبحث"},
+        {fr:"chaud(e)", ar:"دافئ"},
+      ],
+      hints: [
+        {ar:"استمع إلى وصف الملابس: اللون، المقاس، المادة", fr:"Écoute : couleur, taille, matière"},
+        {ar:"انتبه للأسعار والمبالغ", fr:"Fais attention aux prix"},
+        {ar:"ركّز على الأشخاص وما يشترون", fr:"Qui achète quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 2 : Essayer des vêtements ──
+  {
+    title: "Activité 2 — Essayer des vêtements",
+    titleAr: "النشاط ٢ — تجربة الملابس",
+    icon: "🪞",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Sara :</strong> Dis, tu aimes cette robe rouge ?<br>
+<strong>Amina :</strong> Elle est jolie. Tu vas l'essayer ?<br>
+<strong>Sara :</strong> Oui ! La cabine d'essayage est là-bas ?<br>
+<strong>Amina :</strong> Oui, à gauche.<br>
+<strong>Sara :</strong> Alors ? Elle me va bien ?<br>
+<strong>Amina :</strong> Oui, elle est magnifique ! Elle n'est pas trop chère ?<br>
+<strong>Sara :</strong> Non, elle est à trente euros. Je la prends !`,
+    scriptAudio: "Dis, tu aimes cette robe rouge ? — Elle est jolie. Tu vas l'essayer ? — Oui ! La cabine d'essayage est là-bas ? — Oui, à gauche. — Alors ? Elle me va bien ? — Oui, elle est magnifique ! Elle n'est pas trop chère ? — Non, elle est à trente euros. Je la prends !",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. De quelle couleur est la robe ?", type:"ab", opts:["Bleue","Rouge"], answer:"Rouge"},
+      {q: "3. La cabine d'essayage est à gauche ou à droite ?", type:"ab", opts:["À gauche","À droite"], answer:"À gauche"},
+      {q: "4. La robe va bien à Sara ?", type:"yesno", answer:"oui"},
+      {q: "5. Combien coûte la robe ?", type:"ab", opts:["Trente euros","Cinquante euros"], answer:"Trente euros"},
+      {q: "6. Sara achète la robe ?", type:"yesno", answer:"oui"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"une robe", ar:"فستان"},
+        {fr:"la cabine d'essayage", ar:"غرفة القياس"},
+        {fr:"essayer", ar:"يجرب"},
+        {fr:"ça me va bien", ar:"يناسبني"},
+        {fr:"à gauche", ar:"على اليسار"},
+        {fr:"à droite", ar:"على اليمين"},
+        {fr:"chère", ar:"غالية"},
+        {fr:"magnifique", ar:"رائع"},
+      ],
+      hints: [
+        {ar:"استمع إلى وصف الملابس: اللون، المقاس، المادة", fr:"Écoute : couleur, taille, matière"},
+        {ar:"انتبه للأسعار والمبالغ", fr:"Fais attention aux prix"},
+        {ar:"ركّز على الأشخاص وما يشترون", fr:"Qui achète quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 3 : À la caisse ──
+  {
+    title: "Activité 3 — À la caisse",
+    titleAr: "النشاط ٣ — عند الصندوق",
+    icon: "💳",
+    script: `<strong>Dialogue :</strong><br><br>
+<strong>Léa :</strong> Bonjour ! Vous avez trouvé ce que vous cherchiez ?<br>
+<strong>Nassim :</strong> Oui, je prends ce pull en coton et ce pantalon.<br>
+<strong>Léa :</strong> Vous avez la carte de fidélité ?<br>
+<strong>Nassim :</strong> Non, je n'ai pas de carte.<br>
+<strong>Léa :</strong> Je peux vous en faire une. C'est gratuit !<br>
+<strong>Nassim :</strong> Ça fait combien au total ?<br>
+<strong>Léa :</strong> Quatre-vingts euros. Vous payez comment ?<br>
+<strong>Nassim :</strong> Par carte bancaire.`,
+    scriptAudio: "Bonjour ! Vous avez trouvé ce que vous cherchiez ? — Oui, je prends ce pull en coton et ce pantalon. — Vous avez la carte de fidélité ? — Non, je n'ai pas de carte. — Je peux vous en faire une. C'est gratuit ! — Ça fait combien au total ? — Quatre-vingts euros. Vous payez comment ? — Par carte bancaire.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["2 personnes","3 personnes"], answer:"2 personnes"},
+      {q: "2. Qu'est-ce que Nassim achète ?", type:"ab", opts:["Un pull et un pantalon","Une veste et une chemise"], answer:"Un pull et un pantalon"},
+      {q: "3. Le pull est en quelle matière ?", type:"ab", opts:["En laine","En coton"], answer:"En coton"},
+      {q: "4. Nassim a une carte de fidélité ?", type:"yesno", answer:"non"},
+      {q: "5. Combien coûte le total ?", type:"ab", opts:["Soixante euros","Quatre-vingts euros"], answer:"Quatre-vingts euros"},
+      {q: "6. Nassim paie comment ?", type:"ab", opts:["En espèces","Par carte bancaire"], answer:"Par carte bancaire"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"un pull", ar:"سترة صوفية"},
+        {fr:"un pantalon", ar:"بنطال"},
+        {fr:"en coton", ar:"من القطن"},
+        {fr:"la carte de fidélité", ar:"بطاقة الولاء"},
+        {fr:"gratuit", ar:"مجاني"},
+        {fr:"au total", ar:"في المجموع"},
+        {fr:"par carte bancaire", ar:"بالبطاقة البنكية"},
+        {fr:"en espèces", ar:"نقداً"},
+      ],
+      hints: [
+        {ar:"استمع إلى وصف الملابس: اللون، المقاس، المادة", fr:"Écoute : couleur, taille, matière"},
+        {ar:"انتبه للأسعار والمبالغ", fr:"Fais attention aux prix"},
+        {ar:"ركّز على الأشخاص وما يشترون", fr:"Qui achète quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  },
+  // ── ACTIVITÉ 4 : Mon look ──
+  {
+    title: "Activité 4 — Mon look",
+    titleAr: "النشاط ٤ — مظهري",
+    icon: "👜",
+    script: `<strong>Monologue :</strong><br><br>
+<strong>Rania :</strong> Bonjour ! Je m'appelle Rania.<br><br>
+<strong>Rania :</strong> Ce matin, je porte un pantalon noir en coton.<br><br>
+<strong>Rania :</strong> Je mets aussi un pull rouge et une veste bleue.<br><br>
+<strong>Rania :</strong> Aux pieds, je porte mes bottes en cuir marron.<br><br>
+<strong>Rania :</strong> Mon accessoire préféré, c'est mon sac à main en cuir noir.<br><br>
+<strong>Rania :</strong> J'aime les vêtements confortables et élégants.`,
+    scriptAudio: "Bonjour ! Je m'appelle Rania. Ce matin, je porte un pantalon noir en coton. Je mets aussi un pull rouge et une veste bleue. Aux pieds, je porte mes bottes en cuir marron. Mon accessoire préféré, c'est mon sac à main en cuir noir. J'aime les vêtements confortables et élégants.",
+    questions: [
+      {q: "1. Combien de personnes parlent ?", type:"ab", opts:["1 personne","2 personnes"], answer:"1 personne"},
+      {q: "2. Comment s'appelle la personne qui parle ?", type:"ab", opts:["Rania","Sara"], answer:"Rania"},
+      {q: "3. De quelle couleur est le pull de Rania ?", type:"ab", opts:["Bleu","Rouge"], answer:"Rouge"},
+      {q: "4. En quelle matière sont les bottes ?", type:"ab", opts:["En laine","En cuir"], answer:"En cuir"},
+      {q: "5. De quelle couleur est le sac à main ?", type:"ab", opts:["Marron","Noir"], answer:"Noir"},
+      {q: "6. Rania aime quels types de vêtements ?", type:"ab", opts:["Originaux et colorés","Confortables et élégants"], answer:"Confortables et élégants"},
+    ],
+    aide: {
+      vocab: [
+        {fr:"un vêtement", ar:"ملابس"},
+        {fr:"un pull", ar:"سترة صوفية"},
+        {fr:"un pantalon", ar:"بنطال"},
+        {fr:"des bottes", ar:"أحذية طويلة"},
+        {fr:"en cuir", ar:"من الجلد"},
+        {fr:"en coton", ar:"من القطن"},
+        {fr:"un sac à main", ar:"حقيبة يد"},
+        {fr:"confortable", ar:"مريح"},
+      ],
+      hints: [
+        {ar:"استمع إلى وصف الملابس: اللون، المقاس، المادة", fr:"Écoute : couleur, taille, matière"},
+        {ar:"انتبه للأسعار والمبالغ", fr:"Fais attention aux prix"},
+        {ar:"ركّز على الأشخاص وما يشترون", fr:"Qui achète quoi ?"},
+      ],
+      strategies: [
+        {ar:"استمع مرتين على الأقل قبل الإجابة", fr:"Écoute au moins deux fois"},
+        {ar:"في المرة الأولى: حاول فهم الموضوع العام", fr:"1re écoute : comprends le sujet général"},
+        {ar:"في المرة الثانية: ركّز على التفاصيل", fr:"2e écoute : concentre-toi sur les détails"},
+      ]
+    }
+  }
+];
+
+function initD8CO(num) {
+  const d8c = '#be123c', d8g = 'linear-gradient(135deg,#be123c,#9f1239)';
+  const data = d8COData[num - 1];
+  if(!data) return;
+  const el = document.getElementById('d8-co'+num+'-content');
+  if(!el) return;
+
+  const qId = 'd8co'+num;
+
+  const vocabHTML = data.aide.vocab.map(v =>
+    `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.85rem">
+      <span style="font-weight:700;color:${d8c};flex:1;text-align:left;direction:ltr">${v.fr}</span>
+      <span style="font-family:'Tajawal',sans-serif;font-weight:600;color:var(--dark);flex:1;text-align:right;direction:rtl">${v.ar}</span>
+    </div>`
+  ).join('');
+
+  const hintsHTML = data.aide.hints.map(h =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">💡 ${h.ar}</div>
+      <div style="color:${d8c};font-weight:600;font-size:0.78rem;text-align:left">${h.fr}</div>
+    </div>`
+  ).join('');
+
+  const strategiesHTML = data.aide.strategies.map(s =>
+    `<div style="padding:8px 14px;border-bottom:1px solid #D1FAE5;font-size:0.82rem;color:var(--dark);direction:ltr">
+      <div style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;margin-bottom:2px">🧠 ${s.ar}</div>
+      <div style="color:${d8c};font-weight:600;font-size:0.78rem;text-align:left">${s.fr}</div>
+    </div>`
+  ).join('');
+
+  const questionsHTML = data.questions.map((q, i) => {
+    if(q.type === 'yesno') {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'oui','${q.answer}')" style="flex:1">Oui ✅</button>
+          <button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'non','${q.answer}')" style="flex:1">Non ❌</button>
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    } else {
+      return `<div class="co-question" style="background:var(--card-bg);border-radius:14px;padding:1rem;margin-bottom:0.8rem;box-shadow:var(--shadow)">
+        <div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">${q.q}</div>
+        <div style="display:flex;gap:8px">
+          ${q.opts.map(o => `<button class="choice-btn" onclick="coAnswer(this,'${qId}',${i},'${o.replace(/'/g,"\\'")}','${q.answer.replace(/'/g,"\\'")}')" style="flex:1">${o}</button>`).join('')}
+        </div>
+        <div id="${qId}-fb-${i}" style="margin-top:6px"></div>
+      </div>`;
+    }
+  }).join('');
+
+  el.innerHTML = `
+    <div style="background:var(--card-bg);border-radius:18px;padding:1.2rem;margin-bottom:1.2rem;box-shadow:var(--shadow);border-right:4px solid ${d8c}">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.8rem">
+        <span style="font-size:1.8rem">${data.icon}</span>
+        <div>
+          <div style="font-size:1rem;font-weight:800;color:${d8c}">${data.title}</div>
+          <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:var(--light);direction:rtl">${data.titleAr}</div>
+        </div>
+      </div>
+      <div style="margin-bottom:1rem">
+        <audio id="d8-co${num}-audio" src="audio/d8-co${num}.mp3" preload="metadata"
+          style="width:100%;border-radius:99px;height:42px;outline:none" controls></audio>
+      </div>
+      <div style="font-size:0.78rem;font-weight:600;color:var(--mid);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px">📜 Script :</div>
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.textContent=this.nextElementSibling.style.display==='none'?'👁️ Voir le script':'🙈 Cacher le script'"
+        class="btn" style="font-size:0.78rem;padding:4px 14px;margin-bottom:8px;border-color:${d8c};color:${d8c}">
+        👁️ Voir le script
+      </button>
+      <div style="display:none;background:#F8F7FF;border-radius:12px;padding:1rem;font-size:0.85rem;line-height:2;color:var(--dark)">
+        ${data.script}
+      </div>
+    </div>
+    <div style="background:#FFF8E1;border-left:4px solid #FFD54F;border-radius:0 10px 10px 0;padding:0.7rem 1rem;margin-bottom:1.2rem;font-size:0.85rem">
+      <strong>📋 Consigne :</strong> Écoute bien le dialogue puis réponds aux questions.
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.82rem;color:#6B4F1D;margin-top:4px;direction:rtl;text-align:right">استمع جيدا ثم أجب عن الأسئلة</div>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <div style="font-size:0.95rem;font-weight:800;color:${d8c};margin-bottom:0.6rem">📝 Questions :</div>
+      <div style="font-family:'Tajawal',sans-serif;font-size:0.8rem;color:var(--light);margin-bottom:0.8rem;direction:rtl;text-align:right">استمع ثم أجب عن الأسئلة التالية</div>
+      ${questionsHTML}
+      <div id="${qId}-score" style="text-align:center;margin-top:0.8rem"></div>
+      <div style="text-align:center;margin-top:0.5rem">
+        <button class="btn" style="border-color:${d8c};color:${d8c}" onclick="coReset('${qId}',${data.questions.length})">🔄 Recommencer</button>
+      </div>
+    </div>
+    <div style="margin-bottom:1.2rem">
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-aide-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid #10B981;background:#ECFDF5;color:#065F46;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">🧩 <span>Aide pour comprendre</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— مساعدة للفهم</span></span>
+        <span class="co-aide-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #D1FAE5;border-top:none;border-radius:0 0 14px 14px;overflow:hidden">
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5">📖 Vocabulaire — <span style="font-family:'Tajawal',sans-serif">المفردات</span></div>
+        ${vocabHTML}
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">💡 Conseils d'écoute — <span style="font-family:'Tajawal',sans-serif">نصائح للاستماع</span></div>
+        ${hintsHTML}
+        <div style="background:#F0FDF4;padding:8px 14px;font-weight:700;font-size:0.82rem;color:#065F46;border-bottom:2px solid #D1FAE5;border-top:2px solid #D1FAE5">🧠 Stratégies — <span style="font-family:'Tajawal',sans-serif">استراتيجيات</span></div>
+        ${strategiesHTML}
+      </div>
+    </div>
+    <div>
+      <button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.co-ans-arrow').textContent=this.nextElementSibling.style.display==='none'?'▼':'▲'"
+        style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid ${d8c};background:#EBF4FF;color:#1E40AF;font-family:'Baloo 2',cursive;font-size:0.9rem;font-weight:700;cursor:pointer;transition:all 0.2s">
+        <span style="display:flex;align-items:center;gap:6px">✅ <span>Réponses</span> <span style="font-family:'Tajawal',sans-serif;font-size:0.82rem;opacity:0.8">— الإجابات</span></span>
+        <span class="co-ans-arrow">▼</span>
+      </button>
+      <div style="display:none;border:2px solid #BFDBFE;border-top:none;border-radius:0 0 14px 14px;padding:1rem;background:#F0F7FF">
+        ${data.questions.map((q,i) => `<div style="padding:4px 0;font-size:0.85rem;font-weight:600;color:#1E40AF">${q.q} → <strong style="color:#059669">${q.answer}</strong></div>`).join('')}
+      </div>
+    </div>
+  `;
 }
 
 // ============================================================
@@ -4856,7 +6279,7 @@ function initD7Compreh() {
       <div style="font-family:'Tajawal',sans-serif;font-size:0.85rem;color:${d7c};direction:rtl;text-align:right">اقرأ النص الآتي ثم أجب عن الأسئلة</div>
     </div>
     <div style="background:white;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.06);padding:1.1rem 1.3rem;margin-bottom:1.3rem;font-size:0.88rem;line-height:2.1;border-left:4px solid ${d7c}">
-      <b>Jean-Pierre</b> va au restaurant <em>« Le Petit Paris »</em> avec ses amis. Le <b>serveur</b> leur montre une <b>table libre</b> près de la fenêtre. Comme plat principal, Jean-Pierre prend du <b>poulet au citron</b>. Son ami <b>Marc</b> boit un verre de <b>jus d'orange</b>. Comme dessert, ils prennent une <b>salade de fruits</b>. Le repas est <b>délicieux</b>. Ils paient par <b>carte bleue</b>.
+      <b>Jean-Pierre</b> va au restaurant <em>« Le Petit Paris »</em> avec ses amis. Le <b>serveur</b> leur montre une <b>table libre</b> près de la fenêtre. Comme plat principal, Jean-Pierre prend du <b>poulet au citron</b>. Son ami <b>Marc</b> boit un verre de <b>jus d'orange</b>. Comme dessert, ils prennent une <b>salade de fruits</b>. Le repas est <b>délicieux</b>.<br>À la fin, <b>ils paient par carte bleue</b>.
     </div>
 
     <!-- ══ EXERCICE 2 : Vrai / Faux ══ -->
@@ -5205,8 +6628,8 @@ function initD7Production() {
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:1rem">
       ${[
-        {id:'ri1',src:'11d7p1.png',fallback:'🍽️',scene:'Un serveur présente le menu à des clients au restaurant',model:'Un serveur présente le menu aux clients dans un restaurant.'},
-        {id:'ri2',src:'11d7p2.png',fallback:'☕',scene:'Des amis boivent du café dans un café parisien',model:'Des amis boivent du café dans un café parisien.'},
+        {id:'ri1',src:'11d7p1.png',fallback:'🍽️',scene:'Un serveur présente le menu à des clients au restaurant',model:'1. Les clients sont au restaurant.<br>2. Le serveur donne le menu.<br>3. Ils vont commander.'},
+        {id:'ri2',src:'11d7p2.png',fallback:'☕',scene:'Des amis boivent du café dans un café parisien',model:'1. Les amis sont au café.<br>2. Ils boivent un café.<br>3. Ils sont à Paris.'},
       ].map((img,i)=>`
       <div style="background:white;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.06);overflow:hidden">
         <div style="display:grid;grid-template-columns:1fr 1fr;min-height:140px">
@@ -6014,13 +7437,13 @@ function initD8Production() {
           id:'img1',
           src:'11d81.png',
           hint:'Décrivez la scène en 2 phrases...',
-          model:'Elle essaie un pantalon dans un magasin.'
+          model:'1. La fille est dans le magasin.<br>2. Elle essaie un pantalon.<br>3. Le pantalon lui va bien.'
         },
         {
           id:'img2',
           src:'11d82.png',
           hint:'Décrivez la scène en 2 phrases...',
-          model:'Il paie ses achats à la caisse du magasin.'
+          model:'1. Le garçon est à la caisse.<br>2. Il paie ses vêtements.<br>3. La vendeuse lui rend le ticket.'
         },
       ].map((img,i)=>`
       <div style="background:white;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,0.06);overflow:hidden">
@@ -6082,6 +7505,12 @@ const groupTabsConfig = {
     comm: [
       {id:'comm',        label:'💬 Communication', init:()=>initComm('d5')},
       {id:'production',  label:'📝 Production',    init:()=>initD5Production()},
+    ],
+    co: [
+      {id:'co1', label:'🎧 À l\'aéroport',  init:()=>initD5CO(1)},
+      {id:'co2', label:'🌤️ La météo',        init:()=>initD5CO(2)},
+      {id:'co3', label:'🏠 La maison',       init:()=>initD5CO(3)},
+      {id:'co4', label:'🏡 Le logement',     init:()=>initD5CO(4)},
     ]
   },
   d6: {
@@ -6103,6 +7532,12 @@ const groupTabsConfig = {
     comm: [
       {id:'comm',          label:'💬 Communication', init:()=>initComm('d6')},
       {id:'production',    label:'📝 Production',    init:()=>initD6Production()},
+    ],
+    co: [
+      {id:'co1', label:'✈️ À Paris',       init:()=>initD6CO(1)},
+      {id:'co2', label:'🖼️ Au musée',      init:()=>initD6CO(2)},
+      {id:'co3', label:'🚇 Le métro',      init:()=>initD6CO(3)},
+      {id:'co4', label:'📸 Ma visite',     init:()=>initD6CO(4)},
     ]
   },
   d7: {
@@ -6124,6 +7559,12 @@ const groupTabsConfig = {
       {id:'comm',            label:'💬 Communication',   init:()=>initComm('d7')},
       {id:'completer-comm',  label:'✍️ Complétez',       init:()=>initD7CommCompleter()},
       {id:'production',      label:'📝 Production',      init:()=>initD7Production()},
+    ],
+    co: [
+      {id:'co1', label:'📞 Réservation',   init:()=>initD7CO(1)},
+      {id:'co2', label:'🍽️ Commander',     init:()=>initD7CO(2)},
+      {id:'co3', label:'🧾 L\'addition',   init:()=>initD7CO(3)},
+      {id:'co4', label:'⭐ Mon restau',    init:()=>initD7CO(4)},
     ]
   },
   d8: {
@@ -6147,6 +7588,12 @@ const groupTabsConfig = {
     comm: [
       {id:'comm',          label:'💬 Communication', init:()=>initComm('d8')},
       {id:'production',    label:'📝 Production',    init:()=>initD8Production()},
+    ],
+    co: [
+      {id:'co1', label:'👗 Un vêtement',   init:()=>initD8CO(1)},
+      {id:'co2', label:'🪞 L\'essayage',   init:()=>initD8CO(2)},
+      {id:'co3', label:'💳 La caisse',     init:()=>initD8CO(3)},
+      {id:'co4', label:'👜 Mon look',      init:()=>initD8CO(4)},
     ]
   }
 };

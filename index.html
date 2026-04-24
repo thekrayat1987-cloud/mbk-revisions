@@ -14,278 +14,31 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mbk-revisions.netlify.app">
 <meta property="og:locale" content="ar_KW">
+<meta property="og:locale:alternate" content="fr_FR">
 <meta property="og:site_name" content="MBK Révisions">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="&#x200F;🇰🇼 يلا نراجع الفرنسي! — MBK Révisions">
 <meta name="twitter:description" content="&#x200F;🏫 8 وحدات · 50+ نشاط تفاعلي · حوارات · بطاقات · قواعد · امتحان تجريبي">
 <meta name="twitter:image" content="https://mbk-revisions.netlify.app/hero.png">
-<meta property="og:url" content="https://thekrayat1987-cloud.github.io/mbk-revisions/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://thekrayat1987-cloud.github.io/mbk-revisions/hero.jpg">
+<link rel="canonical" href="https://mbk-revisions.netlify.app/">
+<link rel="alternate" hreflang="ar" href="https://mbk-revisions.netlify.app/">
+<link rel="alternate" hreflang="fr" href="https://mbk-revisions.netlify.app/">
+<link rel="alternate" hreflang="x-default" href="https://mbk-revisions.netlify.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Readex+Pro:wght@400;500;600;700&family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="premium-index.css">
+<script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script defer src="premium-illustrations.js"></script>
+<script defer src="mbk-a11y.js"></script>
 <style>
-/* ── Reset & Variables ── */
+/* Base minimale — tout le design premium est dans premium-index.css */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#f0edff;--card-bg:#ffffff;--dark:#1a1a2e;--mid:#4A5568;--light:#8892a4;
-  --border:#e5e0f8;--shadow:0 4px 20px rgba(102,126,234,0.1);
-  --g1:#4f46e5;--g2:#a855f7;--g3:#f97316;
-  --d5:#667eea;--d5b:#764ba2;--d6:#a855f7;--d6b:#7c3aed;
-  --d7:#f97316;--d7b:#ea580c;--d8:#be123c;--d8b:#9f1239;
-  --d9:#0f766e;--d9b:#0d9488;
-  --d4t:#16a34a;--d4tb:#15803d;--d5t:#9333ea;--d5tb:#7e22ce;
-  --d6t:#dc2626;--d6tb:#b91c1c;
-  --glass:rgba(255,255,255,0.15);--glass-border:rgba(255,255,255,0.25);
-}
-.dark{
-  --bg:#0f0d1f;--card-bg:#1a1740;--dark:#e8e4ff;--mid:#a89fd8;--light:#7c75b0;
-  --border:#2d2a5e;--shadow:0 4px 20px rgba(0,0,0,0.45);
-  --glass:rgba(255,255,255,0.06);--glass-border:rgba(255,255,255,0.1);
-}
 html{scroll-behavior:smooth}
-body{
-  font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--dark);
-  overflow-x:hidden;transition:background 0.4s,color 0.4s;line-height:1.7;
-}
-
-/* ── Navbar ── */
-.navbar{
-  position:fixed;top:0;left:0;right:0;z-index:1000;
-  padding:0.8rem 2rem;display:flex;align-items:center;justify-content:space-between;
-  background:rgba(240,237,255,0.7);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);transition:all 0.3s;
-}
-.dark .navbar{background:rgba(15,13,31,0.8)}
-.navbar.scrolled{padding:0.5rem 2rem;box-shadow:var(--shadow)}
-.nav-logo{
-  font-family:'Baloo 2',cursive;font-size:1.4rem;font-weight:800;
-  background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;text-decoration:none;white-space:nowrap;
-}
-.nav-links{display:flex;gap:1.5rem;align-items:center;list-style:none}
-.nav-links a{
-  color:var(--mid);text-decoration:none;font-weight:500;font-size:0.9rem;
-  transition:color 0.2s;
-}
-.nav-links a:hover{color:var(--g2)}
-.dark-btn{
-  background:var(--glass);border:1.5px solid var(--glass-border);
-  border-radius:50%;width:38px;height:38px;font-size:1.1rem;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;transition:all 0.3s;
-}
-.dark-btn:hover{transform:scale(1.1)}
-.mobile-menu-btn{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--dark);order:-1}
-
-/* ── Hero ── */
-.hero{
-  min-height:100vh;display:flex;align-items:center;justify-content:center;
-  padding:7rem 2rem 4rem;position:relative;overflow:hidden;
-  background:linear-gradient(135deg,#1a1145 0%,#2d1b69 30%,#4f46e5 60%,#a855f7 80%,#f97316 100%);
-}
-.hero::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 20% 50%,rgba(167,139,250,0.3),transparent 50%),
-             radial-gradient(circle at 80% 30%,rgba(249,115,22,0.2),transparent 50%),
-             radial-gradient(circle at 50% 80%,rgba(79,70,229,0.3),transparent 50%);
-}
-.hero-inner{
-  max-width:1200px;width:100%;display:grid;grid-template-columns:1fr 1fr;
-  gap:3rem;align-items:center;position:relative;z-index:2;
-}
-.hero-text{color:#fff}
-.hero-text h1{
-  font-family:'Tajawal',sans-serif;font-size:3.5rem;font-weight:800;
-  line-height:1.2;margin-bottom:1rem;
-  text-shadow:0 4px 30px rgba(0,0,0,0.3);
-}
-.hero-text h1 span{
-  background:linear-gradient(135deg,#fbbf24,#f97316);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.hero-text p{
-  font-size:1.3rem;color:rgba(255,255,255,0.85);margin-bottom:2rem;
-  font-weight:500;
-}
-.hero-cta{
-  display:inline-flex;align-items:center;gap:0.6rem;
-  padding:1rem 2.5rem;border-radius:99px;border:none;cursor:pointer;
-  font-family:'Tajawal',sans-serif;font-size:1.2rem;font-weight:700;
-  color:#fff;text-decoration:none;
-  background:linear-gradient(135deg,var(--g3),#f59e0b);
-  box-shadow:0 8px 30px rgba(249,115,22,0.4);
-  transition:all 0.3s;position:relative;overflow:hidden;
-}
-.hero-cta::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,#f59e0b,var(--g3));
-  opacity:0;transition:opacity 0.3s;
-}
-.hero-cta:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(249,115,22,0.5)}
-.hero-cta:hover::before{opacity:1}
-.hero-cta span{position:relative;z-index:1}
-.hero-img{position:relative}
-.hero-img img{
-  width:100%;border-radius:24px;
-  box-shadow:0 20px 60px rgba(0,0,0,0.3);
-  border:3px solid rgba(255,255,255,0.15);
-}
-.hero-img::before{
-  content:'';position:absolute;inset:-8px;border-radius:28px;
-  background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));
-  z-index:-1;opacity:0.5;filter:blur(20px);
-}
-
-/* Floating particles */
-.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.particle{
-  position:absolute;border-radius:50%;background:rgba(255,255,255,0.15);
-  animation:floatUp linear infinite;
-}
-@keyframes floatUp{
-  0%{transform:translateY(100vh) scale(0);opacity:0}
-  10%{opacity:1}
-  90%{opacity:1}
-  100%{transform:translateY(-10vh) scale(1);opacity:0}
-}
-
-/* ── Section common ── */
-section{padding:5rem 2rem}
-.section-title{
-  font-family:'Tajawal',sans-serif;font-size:2.2rem;font-weight:800;
-  text-align:center;margin-bottom:0.5rem;
-}
-.section-sub{
-  text-align:center;color:var(--mid);font-size:1rem;margin-bottom:3rem;
-}
-.container{max-width:1100px;margin:0 auto}
-
-/* ── Features ── */
-.features{background:var(--bg)}
-.features-grid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem;
-}
-.feature-card{
-  background:var(--card-bg);border:1.5px solid var(--border);border-radius:18px;
-  padding:1.8rem 1.2rem;text-align:center;transition:all 0.3s;
-  box-shadow:var(--shadow);
-}
-.feature-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(102,126,234,0.15)}
-.feature-icon{font-size:2.4rem;margin-bottom:0.5rem;display:block}
-.feature-card h3{font-family:'Tajawal',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:0.3rem}
-.feature-card p{color:var(--mid);font-size:0.85rem;line-height:1.5}
-
-/* reveal animation */
-.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
+.container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.nav-links{list-style:none}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
-
-/* ── Stats ── */
-.stats{
-  background:linear-gradient(135deg,var(--g1),var(--g2),var(--g3));
-  color:#fff;
-}
-.stats-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;
-}
-.stat-item h2{font-family:'Baloo 2',cursive;font-size:3rem;font-weight:800;line-height:1}
-.stat-item p{font-size:0.95rem;opacity:0.9;margin-top:0.3rem;font-weight:500}
-
-/* ── Dossiers ── */
-.dossiers{background:var(--bg)}
-.grade-label{
-  font-family:'Tajawal',sans-serif;font-weight:700;font-size:1.1rem;
-  margin-bottom:1rem;padding:0.5rem 1.2rem;border-radius:99px;
-  display:inline-block;color:#fff;
-}
-.grade-section{margin-bottom:2.5rem}
-.dossier-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
-.dossier-card{
-  border-radius:16px;padding:1.5rem 1rem;text-align:center;color:#fff;
-  font-weight:700;font-size:1rem;cursor:default;
-  transition:all 0.3s;box-shadow:0 4px 15px rgba(0,0,0,0.15);
-}
-a.dossier-card{text-decoration:none;color:#fff;display:block}
-.dossier-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.2)}
-.dossier-card .emoji{font-size:2rem;display:block;margin-bottom:0.5rem}
-.dossier-card .label{font-size:0.82rem;opacity:0.9;font-weight:500;margin-top:0.3rem}
-
-/* ── Teacher Message ── */
-.teacher-msg{background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.msg-box{
-  max-width:700px;margin:0 auto;text-align:center;
-  background:var(--bg);border:2px solid var(--border);border-radius:24px;
-  padding:3rem 2rem;position:relative;
-}
-.msg-box::before{
-  content:'\201C';position:absolute;top:-10px;right:30px;
-  font-size:5rem;color:var(--g2);opacity:0.2;font-family:serif;line-height:1;
-}
-.msg-box .flag{font-size:3rem;margin-bottom:1rem;display:block}
-.msg-box blockquote{
-  font-size:1.05rem;line-height:1.9;color:var(--dark);margin-bottom:1.2rem;
-}
-.msg-box .author{font-weight:700;color:var(--g2);font-size:1.1rem}
-
-/* ── Final CTA ── */
-.final-cta{
-  text-align:center;padding:5rem 2rem;
-  background:linear-gradient(135deg,#1a1145,#2d1b69,#4f46e5);color:#fff;
-  position:relative;overflow:hidden;
-}
-.final-cta::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 50% 50%,rgba(168,85,247,0.3),transparent 60%);
-}
-.final-cta h2{
-  font-family:'Tajawal',sans-serif;font-size:2.5rem;font-weight:800;
-  margin-bottom:0.8rem;position:relative;z-index:1;
-}
-.final-cta p{
-  font-size:1.1rem;opacity:0.85;margin-bottom:2rem;position:relative;z-index:1;
-}
-.final-cta .hero-cta{font-size:1.3rem;padding:1.1rem 3rem;position:relative;z-index:1}
-
-/* ── Footer ── */
-footer{
-  background:var(--card-bg);border-top:1px solid var(--border);
-  padding:2rem;text-align:center;color:var(--mid);font-size:0.85rem;
-}
-footer a{color:var(--g2);text-decoration:none}
-
-/* ── Responsive ── */
-@media(max-width:768px){
-  .hero{padding:4.5rem 1.2rem 2.5rem;min-height:auto}
-  .hero-inner{grid-template-columns:1fr;text-align:center;gap:1.5rem}
-  .hero-text h1{font-size:2.2rem}
-  .hero-text p{font-size:1.05rem;margin-bottom:1.2rem}
-  .hero-img{order:-1}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
-  .navbar{padding:0.5rem 1rem}
-  .navbar .nav-brand{gap:0.4rem}
-  .navbar .nav-logo-img{height:26px!important}
-  .nav-logo{font-size:1rem}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;
-    flex-direction:column;background:var(--card-bg);padding:1rem;gap:0.8rem;
-    border-bottom:1px solid var(--border);box-shadow:var(--shadow);
-  }
-  .nav-links.open{display:flex}
-  .mobile-menu-btn{display:block}
-  .features-grid{grid-template-columns:repeat(2,1fr);gap:0.8rem}
-  .feature-card{padding:1rem 0.6rem;border-radius:14px}
-  .feature-icon{font-size:1.8rem;margin-bottom:0.3rem}
-  .feature-card h3{font-size:0.85rem;margin-bottom:0}
-  .feature-card p{display:none}
-  .dossier-grid{grid-template-columns:repeat(2,1fr)}
-  section{padding:2.5rem 1.2rem}
-}
-@media(max-width:480px){
-  .hero-text h1{font-size:2rem}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
-  .stat-item h2{font-size:2.2rem}
-}
 </style>
 </head>
 <body>
@@ -293,9 +46,9 @@ footer a{color:var(--g2);text-decoration:none}
 <!-- ── Navbar ── -->
 <nav class="navbar" id="navbar">
   <div class="nav-brand" style="display:flex;align-items:center;gap:0.7rem">
-    <img class="nav-logo-img" src="logo-mbk-crop.png" alt="MBK" style="height:34px;object-fit:contain">
-    <img class="nav-logo-img" src="ministry-crop.png" alt="وزارة التربية" style="height:34px;object-fit:contain">
-    <a href="#" class="nav-logo">MBK Révisions</a>
+    <img fetchpriority="high" decoding="async" class="nav-logo-img" src="logo-mbk-crop.webp" alt="MBK" style="height:34px;object-fit:contain">
+    <img fetchpriority="high" decoding="async" class="nav-logo-img" src="ministry-crop.webp" alt="وزارة التربية" style="height:34px;object-fit:contain">
+    <a href="#" class="nav-logo"><em>MBK Révisions</em></a>
   </div>
   <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
   <ul class="nav-links">
@@ -309,7 +62,6 @@ footer a{color:var(--g2);text-decoration:none}
 
 <!-- ── Hero ── -->
 <section class="hero" id="hero">
-  <div class="particles" id="particles"></div>
   <div class="hero-inner">
     <div class="hero-text">
       <h1>يلا نراجع <span>الفرنسي!</span></h1>
@@ -317,7 +69,7 @@ footer a{color:var(--g2);text-decoration:none}
       <a href="MBK_Revisions.html" class="hero-cta"><span>ادخل الموقع &#128640;</span></a>
     </div>
     <div class="hero-img">
-      <img src="hero.png" alt="طلاب يراجعون الفرنسية" loading="eager">
+      <img src="hero.webp" alt="طلاب يراجعون الفرنسية" loading="eager">
     </div>
   </div>
 </section>
@@ -329,42 +81,42 @@ footer a{color:var(--g2);text-decoration:none}
     <p class="section-sub reveal">كل الأدوات اللي تحتاجها عشان تجهز للامتحان</p>
     <div class="features-grid">
       <div class="feature-card reveal">
-        <span class="feature-icon">&#127917;</span>
+        <img class="feature-icon" src="icons/icon-dialogues.webp" alt="" loading="lazy" width="256" height="256">
         <h3>حوارات تفاعلية</h3>
         <p>اقرأ الحوار واسمعه وراجع المفردات مع الترجمة العربية</p>
       </div>
       <div class="feature-card reveal">
-        <span class="feature-icon">&#128218;</span>
+        <img class="feature-icon" src="icons/icon-flashcards.webp" alt="" loading="lazy" width="256" height="256">
         <h3>بطاقات تعلّم</h3>
         <p>بطاقات تعلّم ذكية تساعدك تحفظ المفردات بسرعة</p>
       </div>
       <div class="feature-card reveal">
-        <span class="feature-icon">&#9889;</span>
+        <img class="feature-icon" src="icons/icon-challenge.webp" alt="" loading="lazy" width="256" height="256">
         <h3>تحدّي شامل</h3>
-        <p>اختبر نفسك بـ ٢٠ سؤال عشوائي من كل الدوسييهات واختر مستواك</p>
+        <p>اختبر نفسك بـ ٢٠ سؤال عشوائي من كل الوحدات واختر مستواك</p>
       </div>
       <div class="feature-card reveal">
-        <span class="feature-icon">&#9997;&#65039;</span>
+        <img class="feature-icon" src="icons/icon-grammar.webp" alt="" loading="lazy" width="256" height="256">
         <h3>تمارين قواعد</h3>
         <p>تدرب على النفي والملكية والتأنيث والتذكير</p>
       </div>
       <div class="feature-card reveal">
-        <span class="feature-icon">&#127183;</span>
+        <img class="feature-icon" src="icons/icon-memory.webp" alt="" loading="lazy" width="256" height="256">
         <h3>ألعاب ذاكرة</h3>
         <p>العب Memory Game وتعلم المفردات بطريقة ممتعة</p>
       </div>
       <div class="feature-card reveal">
-        <span class="feature-icon">&#128214;</span>
+        <img class="feature-icon" src="icons/icon-reading.webp" alt="" loading="lazy" width="256" height="256">
         <h3>نصوص فهم</h3>
         <p>نصوص فهم مكتوب مع أسئلة وإجابات تفصيلية</p>
       </div>
       <div class="feature-card reveal">
-        <span class="feature-icon">&#127911;</span>
+        <img class="feature-icon" src="icons/icon-listening.webp" alt="" loading="lazy" width="256" height="256">
         <h3>فهم سمعي</h3>
         <p>استمع لحوارات حقيقية بأصوات فرنسية وأجب على أسئلة الاستيعاب</p>
       </div>
       <div class="feature-card reveal">
-        <span class="feature-icon">&#127891;</span>
+        <img class="feature-icon" src="icons/icon-exam.webp" alt="" loading="lazy" width="256" height="256">
         <h3>امتحان تجريبي</h3>
         <p>حضّر نفسك للامتحان النهائي بأسئلة على نمط الامتحان الرسمي</p>
       </div>
@@ -400,7 +152,7 @@ footer a{color:var(--g2);text-decoration:none}
 <section class="dossiers" id="dossiers">
   <div class="container">
     <h2 class="section-title reveal">الوحدات المتاحة</h2>
-    <p class="section-sub reveal">اختر الدوسييه وابدأ المراجعة</p>
+    <p class="section-sub reveal">اختر الوحدة وابدأ المراجعة</p>
 
     <div class="grade-section reveal">
       <span class="grade-label" style="background:linear-gradient(135deg,var(--d5),var(--d5b))">&#128216; الصف الحادي عشر — 11ème — الفصل الدراسي الثاني</span>
@@ -421,7 +173,7 @@ footer a{color:var(--g2);text-decoration:none}
           <span class="emoji">&#128221;</span>Examen Blanc<div class="label">امتحان تجريبي</div>
         </a>
         <a href="MBK_Revisions.html?challenge=11" class="dossier-card" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
-          <span class="emoji">&#9889;</span>Challenge Total<div class="label">تحدّي شامل — كل الدوسييهات</div>
+          <span class="emoji">&#9889;</span>Challenge Total<div class="label">تحدّي شامل — كل الوحدات</div>
         </a>
       </div>
     </div>
@@ -442,7 +194,7 @@ footer a{color:var(--g2);text-decoration:none}
           <span class="emoji">&#128221;</span>Examen Blanc<div class="label">امتحان تجريبي</div>
         </a>
         <a href="MBK_Revisions.html?challenge=12" class="dossier-card" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
-          <span class="emoji">&#9889;</span>Challenge Total<div class="label">تحدّي شامل — كل الدوسييهات</div>
+          <span class="emoji">&#9889;</span>Challenge Total<div class="label">تحدّي شامل — كل الوحدات</div>
         </a>
       </div>
     </div>
@@ -467,20 +219,46 @@ footer a{color:var(--g2);text-decoration:none}
   </div>
 </section>
 
+<!-- ── Reviews / آراء الطلاب ── -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-intro reveal">
+      <h2 class="section-title">آراء الطلاب ⭐</h2>
+      <p class="section-sub">شنو يقولون الطلاب اللي جرّبوا الموقع</p>
+    </div>
+    <div class="reviews-cta-wrap reveal">
+      <a class="reviews-btn" href="https://senja.io/p/mbk-revisions/r/oDxRnO" target="_blank" rel="noopener noreferrer">
+        <span class="star">⭐</span>
+        <span>شاركنا رأيك</span>
+      </a>
+    </div>
+    <div class="reviews-wall-wrap reveal">
+      <script type="text/javascript" src="https://widget.senja.io/js/iframeResizer.min.js"></script>
+      <iframe id="wall-of-love-TPwWanu-home" src="https://senja.io/p/mbk-revisions/TPwWanu?hideNavigation=true&embed=true" title="Wall of Love" frameborder="0" scrolling="no" width="100%"></iframe>
+      <script type="text/javascript">document.addEventListener("DOMContentLoaded", function () {iFrameResize({log: false, checkOrigin: false}, "#wall-of-love-TPwWanu-home");});</script>
+    </div>
+  </div>
+</section>
+
 <!-- ── Final CTA ── -->
 <section class="final-cta">
   <h2>جاهز تبدأ المراجعة؟</h2>
   <p>لا تضيع وقت — يلا ادخل وابدأ!</p>
   <a href="MBK_Revisions.html" class="hero-cta"><span>يلا نبدأ المراجعة! &#128170;</span></a>
+  <div class="final-cta-badges">
+    <span class="final-cta-badge"><span class="dot"></span>مجاني 100%</span>
+    <span class="final-cta-badge"><span class="dot"></span>بدون تسجيل</span>
+    <span class="final-cta-badge"><span class="dot"></span>يشتغل على الموبايل</span>
+  </div>
 </section>
 
 <!-- ── Footer ── -->
 <footer>
   <div style="display:flex;align-items:center;justify-content:center;gap:2rem;margin-bottom:1rem;flex-wrap:wrap">
-    <img src="ministry-crop.png" alt="وزارة التربية" style="height:70px;object-fit:contain">
+    <img loading="lazy" decoding="async" src="ministry-crop.webp" alt="وزارة التربية" style="height:70px;object-fit:contain">
     <div style="text-align:center">
-      <img src="logo-mbk-crop.png" alt="MBK" style="height:55px;object-fit:contain;margin-bottom:4px">
-      <div style="font-family:'Tajawal',sans-serif;font-size:0.75rem;color:var(--mid);direction:rtl">منطقة مبارك الكبير التعليمية</div>
+      <img loading="lazy" decoding="async" src="logo-mbk-crop.webp" alt="MBK" style="height:55px;object-fit:contain;margin-bottom:4px">
+      <div style="font-size:0.78rem;color:var(--muted);direction:rtl">منطقة مبارك الكبير التعليمية</div>
     </div>
   </div>
   <p>MBK Révisions &copy; 2025-2026 — صنع بكل حب &#10084;&#65039; بواسطة <strong>Madame Thekrayat</strong></p>
@@ -532,16 +310,86 @@ const counterObs = new IntersectionObserver((entries)=>{
 },{threshold:0.5});
 document.querySelectorAll('.counter').forEach(el=>counterObs.observe(el));
 
-/* ── Particles ── */
-(function createParticles(){
-  const c = document.getElementById('particles');
-  for(let i=0;i<20;i++){
-    const p = document.createElement('div');
-    p.className='particle';
-    const size = Math.random()*6+2;
-    p.style.cssText=`width:${size}px;height:${size}px;left:${Math.random()*100}%;animation-duration:${Math.random()*8+6}s;animation-delay:${Math.random()*6}s;`;
-    c.appendChild(p);
+/* ═══ Illustrations SVG premium animées (depuis premium-illustrations.js) ═══ */
+(function(){
+  // Mapping clé dossier landing → clé ILLUSTRATIONS dans premium-illustrations.js
+  const ILLUST_MAP = {
+    5: 'd5', 6: 'd6', 7: 'd7', 8: 'd8', 9: 'd9',
+    d4t: 'd4t', d5t: 'd5t', d6t: 'd6t',
+    ebt: 'd9',              // réutilise l'illustration Examen
+    challenge:   'challenge',
+    challenge12: 'challenge'
+  };
+
+  function getKey(card) {
+    const href = card.getAttribute('href') || '';
+    if (href.includes('dossier=d4t')) return 'd4t';
+    if (href.includes('dossier=d5t')) return 'd5t';
+    if (href.includes('dossier=d6t')) return 'd6t';
+    if (href.includes('dossier=ebt') || href.includes('examen12')) return 'ebt';
+    if (href.includes('challenge=12')) return 'challenge12';
+    if (href.includes('challenge=11') || href.includes('challenge')) return 'challenge';
+    const m = href.match(/dossier=(\d+)/);
+    if (m) return m[1];
+    return null;
   }
+
+  function applyIllustrations() {
+    if (!window.MBK_ILLUSTRATIONS) return false;
+    document.querySelectorAll('.dossier-card').forEach(card => {
+      const key = getKey(card);
+      if (!key) return;
+      const illustKey = ILLUST_MAP[key];
+      const svg = window.MBK_ILLUSTRATIONS[illustKey];
+      const emojiSpan = card.querySelector('.emoji');
+      if (emojiSpan && svg) {
+        emojiSpan.innerHTML = svg;
+        emojiSpan.classList.add('dossier-card-badge', 'dossier-card-svg');
+      }
+    });
+    return true;
+  }
+
+  // premium-illustrations.js est chargé en defer : patienter qu'il ait exposé window.MBK_ILLUSTRATIONS
+  if (!applyIllustrations()) {
+    window.addEventListener('DOMContentLoaded', applyIllustrations);
+    window.addEventListener('load', applyIllustrations);
+  }
+})();
+
+/* ═══ Premium upgrade : aurora + Twemoji parse ═══ */
+(function(){
+  // Injecte aurora background
+  if (!document.querySelector('.aurora-bg')) {
+    const a = document.createElement('div');
+    a.className = 'aurora-bg';
+    a.innerHTML = '<div class="aurora-blob"></div>';
+    document.body.insertBefore(a, document.body.firstChild);
+  }
+  // Twemoji parse
+  function parseEmojis(root){
+    if (typeof twemoji === 'undefined') return;
+    try {
+      twemoji.parse(root || document.body, {
+        folder: 'svg', ext: '.svg', className: 'emoji',
+        base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'
+      });
+    } catch(e){}
+  }
+  parseEmojis();
+  // Observer pour contenu dynamique
+  let pending = new Set(); let timer = null;
+  new MutationObserver(function(muts){
+    for (const m of muts) for (const n of m.addedNodes) {
+      if (n.nodeType === 1 && n.tagName !== 'IMG') pending.add(n);
+    }
+    if (pending.size === 0) return;
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      const nodes = Array.from(pending); pending.clear();
+      nodes.forEach(parseEmojis);
+    }, 50);
+  }).observe(document.body, { childList: true, subtree: true });
 })();
 </script>
 </body>

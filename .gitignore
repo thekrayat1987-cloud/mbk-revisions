@@ -1,0 +1,28 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+
+# Dev / generation scripts (contain API keys)
+generate_avatar_video.py
+generate_co_all.py
+generate_co_audio.py
+generate_co_elevenlabs.py
+generate_co_v2.py
+generate_dialogues.py
+generate_dictee.py
+generate_image.py
+dialogues_data.py
+
+# Working previews (not for prod)
+preview_*.html
+
+# Test/work artefacts
+audio/test_*.mp3
+video/
+avatar2.png
+
+# Editor/local
+.claude/settings.local.json
+.claude/settings.json
+.claude/launch.json
