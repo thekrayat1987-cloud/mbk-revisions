@@ -57,7 +57,7 @@ body.dark-mode .btn-wrong { background: #4c0519 !important; color: #fca5a5 !impo
   position:sticky; top:0; z-index:200; backdrop-filter:blur(16px);
   -webkit-backdrop-filter:blur(16px); transition:all 0.3s;
 }
-.top-bar-row1 { display:flex; align-items:center; gap:0.6rem; width:100%; }
+.top-bar-row1 { display:flex; align-items:center; gap:0.55rem; width:100%; }
 .top-bar-logo {
   font-family:'Baloo 2',cursive; font-size:1.1rem; font-weight:800;
   background:linear-gradient(135deg,#4f46e5,#a855f7,#f97316);
@@ -83,14 +83,17 @@ body.dark-mode .btn-wrong { background: #4c0519 !important; color: #fca5a5 !impo
 
 
 
-.top-bar-actions { display:flex; gap:5px; align-items:center; flex-shrink:0; }
-.dark-toggle {
-  background:var(--card-bg); border:1.5px solid var(--border);
-  border-radius:50%; width:32px; height:32px; font-size:0.9rem;
-  cursor:pointer; display:flex; align-items:center; justify-content:center;
-  transition:all 0.2s;
+.top-bar-actions {
+  display:flex; gap:2px; align-items:center; flex-shrink:0;
+  background:var(--border); border-radius:12px; padding:2px;
 }
-.dark-toggle:hover { transform:scale(1.1); }
+.dark-toggle {
+  background:transparent; border:none;
+  border-radius:10px; width:30px; height:30px; font-size:0.95rem;
+  cursor:pointer; display:flex; align-items:center; justify-content:center;
+  transition:all 0.2s; color:var(--mid);
+}
+.dark-toggle:hover { background:var(--card-bg); transform:scale(1.05); }
 
 /* ── DOSSIER TABS — card style ── */
 .dossier-tabs {
@@ -292,11 +295,12 @@ nav::-webkit-scrollbar-thumb { background: #a5b4fc; border-radius: 3px; }
   }
   .grade-toggle button.active-g {
     border-radius:11px;
-    box-shadow:0 3px 10px rgba(102,126,234,0.35);
+    box-shadow:0 2px 8px rgba(102,126,234,0.28), 0 0 0 0.5px rgba(255,255,255,0.4) inset;
   }
 
   /* ── Actions ── */
-  .dark-toggle { width:36px; height:36px; font-size:1.1rem; border-radius:12px; }
+  .top-bar-actions { padding:2px; border-radius:12px; gap:2px; }
+  .dark-toggle { width:34px; height:34px; font-size:1.05rem; border-radius:10px; }
 
   /* ════════════════════════════════
      DOSSIER TABS (D5/D6/D7...)
