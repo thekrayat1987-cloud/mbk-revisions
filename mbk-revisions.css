@@ -816,3 +816,83 @@ body.dark-mode .dc-correct{ background:rgba(102,126,234,.15); color:#a5b4fc; }
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
 }
+
+/* ══════════════════════════════════════════════════════════════
+   FIX iPhone — top-bar tronqué + collision flèche/arabe
+   ══════════════════════════════════════════════════════════════ */
+
+/* La flèche bento (.bento-arrow) est absolue à bottom:16/right:16 (32×32).
+   Quand le titre wrap sur 2 lignes (ex. « Comm & Production »), le bloc
+   arabe RTL text-align:right se retrouve à la même hauteur verticale que
+   la flèche et passe dessous. On réserve une bande à droite sur l'arabe
+   pour qu'il ne percute jamais la flèche (le titre, lui, reste en haut
+   de la carte, loin de la flèche, donc pas besoin de padding). */
+.home-grid.bento-grid .home-card-ar {
+  padding-right: 44px !important;
+}
+
+/* Cartes Examen Blanc (Q1..Q5) : titres longs comme « Question 4 —
+   Communication » ou « Question 5 — Production écrite » contiennent un
+   mot indivisible qui dépasse sinon le overflow:hidden de la carte. */
+.home-grid.bento-grid .home-card-title {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Sur petit écran (≤480px) : titre serif italique réduit + flèche plus
+   compacte + padding-right ajusté pour que l'arabe « التواصل والتعبير »
+   tienne sur 1 ligne tout en restant clear de la flèche. */
+@media (max-width: 480px) {
+  .home-grid.bento-grid .home-card-title {
+    font-size: 1.05rem !important;
+    line-height: 1.15 !important;
+  }
+  .home-grid.bento-grid .home-card-ar {
+    font-size: 0.78rem !important;
+    padding-right: 30px !important;
+  }
+  .home-grid.bento-grid .home-card {
+    padding: 14px !important;
+    min-height: 170px !important;
+  }
+  .home-grid.bento-grid .bento-arrow {
+    width: 26px; height: 26px;
+    bottom: 10px; right: 10px;
+  }
+  .home-grid.bento-grid .bento-arrow svg { width: 11px; height: 11px; }
+}
+
+/* Top-bar : à ≤430px (iPhone std), MBK + « Révisions » + toggle + 3 actions
+   débordent et le bouton 🌙 est rogné. On masque le label « Révisions »
+   (le logo MBK + le toggle 11/12 + le titre dans l'icône logo suffisent
+   à identifier la page). */
+@media (max-width: 430px) {
+  .top-bar { padding: 0.5rem 0.7rem; }
+  .top-bar-row1 { gap: 0.4rem; }
+  .top-bar-logo { display: none; }
+  .top-bar-row1 img.top-bar-mbk-logo { height: 30px !important; }
+  .grade-toggle button { padding: 5px 9px; font-size: 0.68rem; }
+  .top-bar-actions { gap: 1px; padding: 2px; }
+  .dark-toggle { width: 32px; height: 32px; font-size: 0.95rem; border-radius: 9px; }
+}
+
+/* iPhone SE 1ère gén (320px) : encore plus serré, on cache le logo MBK
+   image (le toggle 11/12 + les actions identifient suffisamment la page). */
+@media (max-width: 360px) {
+  .top-bar { padding: 0.5rem 0.5rem; }
+  .top-bar-row1 { gap: 0.3rem; }
+  .top-bar-row1 img.top-bar-mbk-logo { display: none; }
+  .grade-toggle button { padding: 4px 7px; font-size: 0.65rem; }
+  .dark-toggle { width: 30px; height: 30px; font-size: 0.9rem; }
+}
+
+/* Sub-nav (.nav-tabs) : sur mobile la barre déborde horizontalement et
+   « Comm & Production » se fait rogner sans indication visuelle qu'on
+   peut scroller. On ajoute un fondu en dégradé sur le bord droit pour
+   suggérer le scroll horizontal. */
+@media (max-width: 768px) {
+  nav.nav-tabs, .dossier-panel nav {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent 100%);
+    mask-image:         linear-gradient(to right, #000 calc(100% - 28px), transparent 100%);
+  }
+}
